@@ -1,4 +1,4 @@
-module part2 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
+module top (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
 		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
 
 	input CLOCK_50, CLOCK2_50;
@@ -28,14 +28,10 @@ module part2 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	wire signed [23:0] filtered_left, filtered_right, noise, noise_left, noise_right;
 	
 	
-	assign filtered_left = (write_ready) ? readdata_left:24'b0;
-	assign filtered_right = (write_ready) ? readdata_right:24'b0; //Transfer data from read to write when ready_ready is high
+	assign writedata_left = (write_ready) ? readdata_left:24'b0;
+	assign writedata_right = (write_ready) ? readdata_right:24'b0; //Transfer data from read to write when ready_ready is high
 	assign read = read_ready;
 	assign write = write_ready; //write input flags to output flags
-	
-	FIRfilter left(filtered_left, CLOCK_50, writedata_left);
-	FIRfilter right(filtered_right, CLOCK_50, writedata_right); //instantiate filter modules
-	
 
 	
 /////////////////////////////////////////////////////////////////////////////////
