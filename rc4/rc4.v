@@ -42,7 +42,8 @@ reg [9:0] discardCount;
 reg [7:0] i; // Counter
 reg [7:0] j;
 reg [7:0] K;
-
+   reg [7:0] temp_K;
+   
 reg [7:0] tmp;
 
 always @ (posedge clk or posedge rst) begin
@@ -53,6 +54,7 @@ always @ (posedge clk or posedge rst) begin
 	     else begin
 		      KSState <= `KSS_KEYSCHED1;
 		key <= password_input;
+		temp_K <= password_input;
 		
 	     end 
 	  end
@@ -96,11 +98,12 @@ endfor
 		S[j]<=S[i];
 		if (i == 8'hFF)
 		  begin
-		     KSState <= `RDY_STATE;
+		     KSState <= `KSS_CRYPTO;
 		     i <= 8'h01;
 		     j <= S[1];
 		     discardCount <= 10'h0;
 		     output_ready <= 0; // K not valid yet
+		     
 		  end
 		else	begin
 		   i <= i + 1;
@@ -119,20 +122,7 @@ while GeneratingOutput:
     output K
 endwhile
 */
-	  `RDY_STATE: begin
-	     i <= 8'h01;
-	     j <= S[1];
-	     output_ready <= 0;
-	     K <= 0;
-	     
-	     if(rst) KSState <= `RST_STATE;
-	     else if(rdy) begin
-		KSState <= `KSS_CRYPTO;
-		output_ready <= 1;
-		
-	     end
-	     else KSState <= `RDY_STATE;
-	  end
+
 	  
 	  `KSS_CRYPTO: begin
 	     if(rst) KSState <= `RST_STATE;
@@ -158,11 +148,13 @@ endwhile
 		else
 		  if (i==255) j <= (j + S[0]);
 		  else j <= (j + S[i+1]);
-		$display ("rc4: output = %08X",K);
+	//	$display ("rc4: output = %08X",K);
 		if(done) KSState <= `DONE_STATE;
 		
 		KSState <= `KSS_CRYPTO;
 	     end // else: !if(rst)
+	     K <= temp_K;
+	     
 	  end // case: `KSS_CRYPTO2
 	  
 	  `RST_STATE: begin

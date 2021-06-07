@@ -3,12 +3,13 @@ module rc4_top_tb();
    reg clk, rst;
    reg [7:0] password, data_in;
    wire [7:0] data_out;
-   reg 	      rdy_en;
-   reg 	      rdy_de;
-   reg 	      done_de, done_en;
+   reg 	      valid1;
+   reg 	      rdy_de, rdy_en, done_en, done_de;
+   
+   reg 	      valid;
   
    
-   rc4_top DUT(clk, rst, password, data_in, data_out, rdy_en, rdy_de, done_en, done_de);
+   rc4_top DUT(clk, rst, password, data_in, data_out, valid1, valid);
    initial begin
       $display("hello, world");
       $dumpfile("t.vcd");
@@ -33,32 +34,37 @@ module rc4_top_tb();
       rdy_de <= 0;
       done_en <= 0;
       done_de <= 0;
+      valid <= 0;
+      valid1 <= 0;
       
       #10;
       rst <= 0;
-      # 50;
       password <= 1;
       #8500;
 
       
 
       #10;
+      valid1 <= 1;
       
       rdy_en <= 1;
       data_in <= 5;
-      #20;
+      #10;
       
       data_in <= 10;
-      #20;
+      #10;
       data_in <= 20;
-      #20;
+      #10;
       data_in <= 30;
-      #20;
+      #10;
       data_in <= 40;
       #40;
       rdy_en <= 0;
+      valid1 <= 0;
+      
       done_en <= 1;
-      rdy_de <= 1;
+      valid <= 1;
+      
       #10;
   
       
@@ -67,9 +73,8 @@ module rc4_top_tb();
       #150;
       #10;
       
-      rdy_de <= 0;
-
-      done_de <= 1;
+      valid <= 0;
+      
       #10;
 
       
@@ -85,7 +90,8 @@ module rc4_top_tb();
    
       #10;
       
-      rdy_en <= 1;
+      valid1 <= 1;
+      
       data_in <= 5;
       #20;
       
@@ -97,11 +103,11 @@ module rc4_top_tb();
       #20;
       data_in <= 40;
       #40;
-      rdy_en <= 0;
-      done_en <= 1;
-      rdy_de <= 1;
+      valid1 <= 0;
+      
       #10;
- 
+      valid <= 1;
+      
       
 
       
@@ -110,7 +116,8 @@ module rc4_top_tb();
       
       rdy_de <= 0;
 
-      done_de <= 1;
+      valid <= 0;
+      
       #10;
       
       #20;
