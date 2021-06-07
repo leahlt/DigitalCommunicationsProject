@@ -1,12 +1,12 @@
 `define KEY_SIZE 7
-module rc4(clk,rst,output_ready,password_input,K, init_done, rdy, done);
+module rc4(clk,rst,output_ready,password_input,K, init_done, valid);
 
 input clk; // Clock
 input rst; // Reset
 input [7:0] password_input; // Password input
 output output_ready; // Output valid
 output [7:0] K; // Output port
-   input     done;
+   input     valid;
    
 
 wire clk, rst; // clock, reset
@@ -14,7 +14,6 @@ reg output_ready;
 wire [7:0] password_input;
 output wire    init_done;
 input wire  start;
-   input wire rdy;
    
    
 
@@ -47,7 +46,8 @@ reg [7:0] K;
 reg [7:0] tmp;
 
 always @ (posedge clk or posedge rst) begin
-
+   K <= 0;
+   
 	case (KSState)	
 	  `KSS_KEYREAD:	begin // KSS_KEYREAD state: Read key from input
 	     if (rst) KSState <= `RST_STATE;
@@ -98,7 +98,9 @@ endfor
 		S[j]<=S[i];
 		if (i == 8'hFF)
 		  begin
-		     KSState <= `KSS_CRYPTO;
+		     //KSState <= `KSS_CRYPTO;
+		     KSState <= `RDY_STATE;
+		     
 		     i <= 8'h01;
 		     j <= S[1];
 		     discardCount <= 10'h0;
@@ -122,10 +124,18 @@ while GeneratingOutput:
     output K
 endwhile
 */
-
+	  `RDY_STATE : begin
+	     		     
+	     i <= 8'h01;
+	     j <= S[1];
+	     
+	     if(valid) KSState <= `KSS_CRYPTO;
+	  end
+	  
 	  
 	  `KSS_CRYPTO: begin
 	     if(rst) KSState <= `RST_STATE;
+	     
 	     else begin
 		S[i] <= S[j];
 		S[j] <= S[i]; // We can do this because of verilog.
@@ -137,6 +147,7 @@ endwhile
 	  
 	  `KSS_CRYPTO2: begin
 	     if(rst) KSState <= `RST_STATE;
+
 	     else begin
 		K <= S[tmp];//S[ S[i]+S[j] ];
 
@@ -148,12 +159,10 @@ endwhile
 		else
 		  if (i==255) j <= (j + S[0]);
 		  else j <= (j + S[i+1]);
-	//	$display ("rc4: output = %08X",K);
-		if(done) KSState <= `DONE_STATE;
-		
+	//	$display ("rc4: output = %08X",K);		
 		KSState <= `KSS_CRYPTO;
 	     end // else: !if(rst)
-	     K <= temp_K;
+	    // K <= temp_K;
 	     
 	  end // case: `KSS_CRYPTO2
 	  
@@ -163,9 +172,7 @@ endwhile
 	     output_ready <= 0;
 	     j <= 0; 
 	  end
-	  `DONE_STATE: begin
-	     KSState <= `RDY_STATE;
-	  end
+
 	  
 	  
 	  default:	KSState <= `RST_STATE;

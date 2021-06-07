@@ -39,7 +39,7 @@ module rc4_top_tb();
       
       #10;
       rst <= 0;
-      password <= 1;
+      password <= 57248;
       #8500;
 
       
@@ -47,7 +47,6 @@ module rc4_top_tb();
       #10;
       valid1 <= 1;
       
-      rdy_en <= 1;
       data_in <= 5;
       #10;
       
@@ -59,10 +58,9 @@ module rc4_top_tb();
       #10;
       data_in <= 40;
       #40;
-      rdy_en <= 0;
       valid1 <= 0;
       
-      done_en <= 1;
+ 
       valid <= 1;
       
       #10;
@@ -70,8 +68,8 @@ module rc4_top_tb();
       
 
       
-      #150;
-      #10;
+      #120;
+  
       
       valid <= 0;
       
@@ -111,18 +109,15 @@ module rc4_top_tb();
       
 
       
-      #150;
-      #10;
+      #120;
       
-      rdy_de <= 0;
 
       valid <= 0;
       
       #10;
       
       #20;
-      done_de <= 0;
-      done_en <= 0;
+
       
          
       
