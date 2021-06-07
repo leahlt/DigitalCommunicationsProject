@@ -1,6 +1,6 @@
 
 
-module encrypt(clk, rst, password, data_in, data_out, init_done, rdy, done, valid, out_valid);
+module encrypt(clk, rst, password, data_in, data_out, init_done, valid, out_valid);
    input wire clk, rst;
    input wire [7:0] password, data_in;
    output reg [7:0] data_out;
@@ -8,9 +8,7 @@ module encrypt(clk, rst, password, data_in, data_out, init_done, rdy, done, vali
    wire [7:0] 	    K;
    reg [7:0] 	    prev_K;
    output wire 	    init_done;
-   input wire 	    rdy;
-   input wire 	    done;
-   
+
    reg [2:0] 	    state;
    reg [7:0] 	    temp_K = 0;
    input 	    valid;

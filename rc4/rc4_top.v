@@ -22,10 +22,11 @@ module rc4_top(clk, rst, password, data_in, data_out, valid1, valid);
    reg [1:0] 	     state2 = 0;
    reg 	     valid2;
    
+   wire      outvalid1, outvalid2;
    
    
-   encrypt encrypt_d(.clk(clk), .rst(rst), .password(password), .data_in(data_in) ,.data_out(data_out_temp), .init_done(init_done1), .rdy(rdy_en), .done(done_en), .valid(valid1));
-   decrypt decrypt_d(.clk(clk), .rst(rst), .password(password), .data_in(data_out_temp2) ,.data_out(data_out), .init_done(init_done2), .rdy(rdy_de), .done(done_de), .valid(valid2));
+   encrypt encrypt_d(.clk(clk), .rst(rst), .password(password), .data_in(data_in) ,.data_out(data_out_temp), .init_done(init_done1), .valid(valid1), .out_valid(out_valid1));
+   decrypt decrypt_d(.clk(clk), .rst(rst), .password(password), .data_in(data_out_temp2) ,.data_out(data_out), .init_done(init_done2), .valid(valid2), .out_valid(outvalid2));
    
 
    always @(posedge clk) begin

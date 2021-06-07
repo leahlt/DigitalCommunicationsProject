@@ -1,18 +1,18 @@
 
-module decrypt(clk, rst, password, data_in, data_out, init_done, rdy, done, valid, out_valid);
+module decrypt(clk, rst, password, data_in, data_out, init_done,  valid, out_valid);
    input wire clk, rst;
    input wire [7:0] password, data_in;
    output reg [7:0] data_out;
    wire 	    output_ready;
    reg [7:0] 	    temp_K = 0;
    reg [7:0] 	    temp_K2 = 0;
-   input	    valid;
    
    reg [7:0] 	    prev_K;
    reg [7:0] 	    data_in_temp;
+   input 	    valid;
+   
    
    output wire 	    init_done;
-   input wire 	    rdy;
    wire [7:0] 	    K;
    input wire 	    done;   
    reg [2:0] 	    state;
@@ -30,6 +30,7 @@ module decrypt(clk, rst, password, data_in, data_out, init_done, rdy, done, vali
 	 data_out <= temp_K ^ data_in;
 	 temp_out_valid <= 1;
 	 out_valid <= temp_out_valid;
+	 
 	 
 	 
       end
