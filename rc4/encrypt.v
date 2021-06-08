@@ -1,5 +1,3 @@
-
-
 module encrypt(clk, rst, password, data_in, data_out, init_done, valid, out_valid);
    input wire clk, rst;
    input wire [7:0] password, data_in;
@@ -11,6 +9,8 @@ module encrypt(clk, rst, password, data_in, data_out, init_done, valid, out_vali
 
    reg [2:0] 	    state;
    reg [7:0] 	    temp_K = 0;
+   reg [7:0] 	    temp_K2 = 0;
+
    input 	    valid;
    output  reg	    out_valid = 0;
    
@@ -27,6 +27,11 @@ module encrypt(clk, rst, password, data_in, data_out, init_done, valid, out_vali
 	 out_valid <= 1;
 	 
       end
+   end // always @ (posedge clk)
+   always @ (posedge output_ready) begin
+	 temp_K2 <= K;
+	 
    end
+   
    
 endmodule // decrypt

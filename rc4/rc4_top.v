@@ -11,6 +11,8 @@ module rc4_top(clk, rst, password, data_in, data_out, valid1, valid);
    wire 	     rdy_en, rdy_de, done_en, done_de;
    wire [7:0] 	     data_out_temp ;
    reg [7:0] 	     data_out_temp2 = 0;
+   reg [7:0] 	     data_out_temp3 = 0;
+
    wire 	     init_done1, init_done2;
    reg [7:0] 	     storage[255:0];
    wire 	     start_en, start_de;
@@ -43,10 +45,11 @@ module rc4_top(clk, rst, password, data_in, data_out, valid1, valid);
    always @(posedge clk) begin
       valid2 <= 0;
       data_out_temp2 <= 0;
+      data_out_temp3 <= storage[j];
       
       if(valid) begin
 	 valid2 <= 1;
-	 data_out_temp2 <= storage[j];
+	 data_out_temp2 <= data_out_temp3;
 	 j <= j + 1;
 	 
       end
