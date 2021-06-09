@@ -1,0 +1,31 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc_24.qsys" --block-symbol-file --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc_24" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ErrorCorrectionCoding/BCH_enc_24.qsys
+Progress: Reading input file
+Progress: Adding bch_0 [altera_bch 18.1]
+Progress: Parameterizing module bch_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc_24.qsys" --synthesis=VERILOG --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc_24\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ErrorCorrectionCoding/BCH_enc_24.qsys
+Progress: Reading input file
+Progress: Adding bch_0 [altera_bch 18.1]
+Progress: Parameterizing module bch_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: BCH_enc_24: Generating BCH_enc_24 "BCH_enc_24" for QUARTUS_SYNTH
+Info: bch_0: Generating BCH generator polynomial
+Info: bch_0: Generating support files for BCH encoder
+Info: bch_0: ----Writing bch_enc_package.vhd
+Info: bch_0: "BCH_enc_24" instantiated altera_bch "bch_0"
+Info: BCH_enc_24: Done "BCH_enc_24" with 2 modules, 7 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

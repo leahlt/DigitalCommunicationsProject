@@ -1,0 +1,45 @@
+{C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/synthesis/BCH_enc.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/synthesis/BCH_enc.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BCH_enc
+
+Top level modules:
+	BCH_enc
+
+} {} {}} {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/synthesis/BCH_dec.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/synthesis/BCH_dec.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BCH_dec
+
+Top level modules:
+	BCH_dec
+
+} {} {}} {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_control.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BCH_enc_ctrl
+-- Compiling module BCH_dec_ctrl
+
+Top level modules:
+	BCH_enc_ctrl
+	BCH_dec_ctrl
+
+} {} {}} {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc_24/synthesis/BCH_enc_24.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc_24/synthesis/BCH_enc_24.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BCH_enc_24
+
+Top level modules:
+	BCH_enc_24
+
+} {} {}} {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec_24/synthesis/BCH_dec_24.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec_24/synthesis/BCH_dec_24.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BCH_dec_24
+
+Top level modules:
+	BCH_dec_24
+
+} {} {}} {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_tb.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BCH_test
+
+Top level modules:
+	BCH_test
+
+} {} {}}

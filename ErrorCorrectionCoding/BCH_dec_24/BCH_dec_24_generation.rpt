@@ -1,0 +1,40 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_dec_24.qsys" --block-symbol-file --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_dec_24" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ErrorCorrectionCoding/BCH_dec_24.qsys
+Progress: Reading input file
+Progress: Adding bch_0 [altera_bch 18.1]
+Progress: Parameterizing module bch_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_dec_24.qsys" --synthesis=VERILOG --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_dec_24\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading ErrorCorrectionCoding/BCH_dec_24.qsys
+Progress: Reading input file
+Progress: Adding bch_0 [altera_bch 18.1]
+Progress: Parameterizing module bch_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: BCH_dec_24: Generating BCH_dec_24 "BCH_dec_24" for QUARTUS_SYNTH
+Info: bch_0: code_clocks = 11, polys_per_pe = 5, full_pes = 2, pes = 2 clocks_per_last_pe = 5
+Info: bch_0: ----Writing bchp_mb_system.vhd
+Info: bch_0: ----Writing bchp_auto_package.vhd
+Info: bch_0: Building Galois Field and inverses. Please wait...
+Info: bch_0: GF_field finished
+Info: bch_0: negenum finished with length 256
+Info: bch_0: powernum finished with length 256
+Info: bch_0: inverses finished with length 256
+Info: bch_0: ----Writing bchp_roots.vhd
+Info: bch_0: ----Writing bchp_invmem.hex
+Info: bch_0: ----Writing bchp_parameters.vhd
+Info: bch_0: files generated: C:/Users/romin/AppData/Local/Temp/alt8787_6601171530528258032.dir/0002_bch_0_gen//bchp_mb_system.vhd C:/Users/romin/AppData/Local/Temp/alt8787_6601171530528258032.dir/0002_bch_0_gen//bchp_auto_package.vhd C:/Users/romin/AppData/Local/Temp/alt8787_6601171530528258032.dir/0002_bch_0_gen//bchp_roots.vhd C:/Users/romin/AppData/Local/Temp/alt8787_6601171530528258032.dir/0002_bch_0_gen//bchp_invmem.hex C:/Users/romin/AppData/Local/Temp/alt8787_6601171530528258032.dir/0002_bch_0_gen//bchp_parameters.vhd
+Info: bch_0: "BCH_dec_24" instantiated altera_bch "bch_0"
+Info: BCH_dec_24: Done "BCH_dec_24" with 2 modules, 28 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

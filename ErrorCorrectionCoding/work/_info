@@ -1,0 +1,164 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vBCH_dec
+Z0 !s110 1623270809
+!i10b 1
+!s100 ceEOgTVTbS5g4=nUJc]KT2
+I1?^NVHYZ]1Vd7Ln`Ol_?U2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding
+w1623175261
+8C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/synthesis/BCH_dec.v
+FC:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/synthesis/BCH_dec.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1623270809.000000
+!s107 C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/synthesis/BCH_dec.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/synthesis/BCH_dec.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@b@c@h_dec
+vBCH_dec_24
+Z7 !s110 1623270810
+!i10b 1
+!s100 e`g;;BUAB?D?PPcoo0Zk^2
+IgSeT3c2@I`=YXY87^A0]S2
+R1
+R2
+w1623270277
+8C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec_24/synthesis/BCH_dec_24.v
+FC:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec_24/synthesis/BCH_dec_24.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z8 !s108 1623270810.000000
+!s107 C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec_24/synthesis/BCH_dec_24.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec_24/synthesis/BCH_dec_24.v|
+!i113 1
+R5
+R6
+n@b@c@h_dec_24
+vBCH_dec_ctrl
+R0
+!i10b 1
+!s100 _:TNl9hh@OC3h80k4gmFi1
+I0gzKY_Hm9>DECcmHmSGPK1
+R1
+R2
+Z9 w1623270585
+Z10 8C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_control.v
+Z11 FC:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_control.v
+L0 59
+R3
+r1
+!s85 0
+31
+R4
+Z12 !s107 C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_control.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_control.v|
+!i113 1
+R5
+R6
+n@b@c@h_dec_ctrl
+vBCH_enc
+R0
+!i10b 1
+!s100 3L>8jz=T3?FflRe]M8UY13
+IeZclHc;WN7T@^9O?W5k?F0
+R1
+R2
+w1623175035
+8C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/synthesis/BCH_enc.v
+FC:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/synthesis/BCH_enc.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/synthesis/BCH_enc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/synthesis/BCH_enc.v|
+!i113 1
+R5
+R6
+n@b@c@h_enc
+vBCH_enc_24
+R7
+!i10b 1
+!s100 `QAjlcCW@CFZ:?XJH6O1c2
+IR_f1=^8Nz0`Xl]AjG0ONT3
+R1
+R2
+w1623270441
+8C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc_24/synthesis/BCH_enc_24.v
+FC:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc_24/synthesis/BCH_enc_24.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc_24/synthesis/BCH_enc_24.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc_24/synthesis/BCH_enc_24.v|
+!i113 1
+R5
+R6
+n@b@c@h_enc_24
+vBCH_enc_ctrl
+R0
+!i10b 1
+!s100 [[T53M[25]e6Lm2@h`EUG0
+IX<>d=]SKdRNKc:7gE7U1E1
+R1
+R2
+R9
+R10
+R11
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!i113 1
+R5
+R6
+n@b@c@h_enc_ctrl
+vBCH_test
+R7
+!i10b 1
+!s100 0DjZG?;Z48JGb2FD=jOH;1
+I`eOmA`^nAOBQD[BA5EjJ=0
+R1
+R2
+w1623270806
+8C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_tb.v
+FC:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_tb.v|
+!i113 1
+R5
+R6
+n@b@c@h_test
