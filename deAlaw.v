@@ -5,7 +5,7 @@ output [11:0] OUTPUT;
 wire [11:0] y, data2;
 wire [7:0] data1, x;
 wire [2:0] a;
-wire [3:0] b;
+wire [4:0] b;
 wire negative;
 
 
@@ -13,8 +13,8 @@ wire negative;
 assign negative = INPUT[7]; //hold the +/- value of the input
 assign data1 = INPUT[7] ? ~INPUT + 1: INPUT;
 
-assign a = data1[6:4]; //get last 3 bits not including sign xxx
-assign b = data1[3:0]; //gets the first 4 bits
+assign a = data1[2:0]; //get last 3 bits not including sign xxx
+assign b = data1[7:3]; //gets the first 4 bits
 
 assign x = (a!=0) ? (2**a) : 2;
 assign y = x * (b+1);
