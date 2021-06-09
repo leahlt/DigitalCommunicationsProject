@@ -18,15 +18,30 @@ module part3 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	wire [23:0] readdata_left, readdata_right;
 	wire [23:0] writedata_left, writedata_right;
 	wire reset = ~KEY[0];
-
+	
 	/////////////////////////////////
 	// Your code goes here 
 	/////////////////////////////////
-	
-	mycircuit circuit(CLOCK_50, read_ready, write_ready, read, write, readdata_left, readdata_right, writedata_left, writedata_right, reset);
+	wire [23:0] modulator_out_l, modulator_out_r;
+	wire[23:0] demodulator_in_l, demodulator_in_r;
+	wire [23:0] rc4_en_l_out, rc4_en_r_out, rc4_de_l_in, rc4_de_r_in;
+
+	wire init_done_de_l, init_done_de_r, init_done_en_l, init_done_en_r;
+
+	encrypt rc4_en_l(CLOCK_50, reset, 1234, readdata_left, rc4_en_l_out, init_done_en_l);
+	encrypt rc4_en_r(CLOCK_50, reset, 1234, readdata_right, rc4_en_r_out, init_done_en_r);
+
+	BPSK modulator_l(rc4_en_l_out, modulator_out_l, CLOCK_50, 1);
+	BPSK modulator_r(rc4_en_r_out, modulator_out_r, CLOCK_50, 1);
+
+	mycircuit circuit(CLOCK_50, read_ready, write_ready, read, write, modulator_out_l, modulator_out_r, demodulator_in_l, demodulator_in_r, reset);
 
 
+	BPSK demodulator_l(demodulator_in_l, rc4_de_l_in , CLOCK_50, 1);
+	BPSK demodulator_r(demodulator_in_r, rc4_de_r_in , CLOCK_50, 1);
 
+	decrypt rc4_de_l(CLOCK_50, reset, 1234, rc4_de_l_in, writedata_left, init_done_en_l);
+	decrypt rc4_de_r(CLOCK_50, reset, 1234, rc4_de_r_in, writedata_right, init_done_en_r);
 
 	
 /////////////////////////////////////////////////////////////////////////////////

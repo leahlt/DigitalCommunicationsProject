@@ -3,7 +3,8 @@ module mycircuit(CLOCK_50, read_ready, write_ready, read, write, readdata_left, 
 	wire signed [23:0] noise;
 	noise_generator ng(.clk(CLOCK_50), .enable(1), .Q(noise));
 
-    input wire CLOCK_50, read_ready, write_ready,reset;
+    input CLOCK_50;
+	input read_ready, write_ready,reset;
     output wire read, write;
     input wire [23:0] readdata_left, readdata_right;
     output wire signed [23:0] writedata_left, writedata_right;
@@ -33,10 +34,20 @@ module mycircuit(CLOCK_50, read_ready, write_ready, read, write, readdata_left, 
 
 	ram2 lfifo(.clock(CLOCK_50), .data(ldata_in), .rdreq(lren), .wrreq(lwren), .empty(lempty), .full(lfull), .q(ldata_out));
 	ram2 rfifo(.clock(CLOCK_50), .data(rdata_in), .rdreq(rren), .wrreq(rwren), .empty(rempty), .full(rfull), .q(rdata_out));
+	wire [23:0] Y_out_real_l, Y_out_real_r, Y_out_imag_l, Y_out_imag_r;
+	reg [23:0] Y_out_real_l_temp = 0;
+	reg [23:0] Y_out_real_r_temp = 0;
 
-    assign s_readdata_left = readdata_left + noise;
-    assign s_readdata_right = readdata_right + noise;
-//---------------adjust here for n---------------------------------------------
+
+     assign s_readdata_left = readdata_left + Y_out_real_l;
+     assign s_readdata_right = readdata_right + Y_out_real_r;
+
+
+	wire busy;
+	awgn noisel(CLOCK_50,reset,read_ready, readdata_left,0,busy,Y_out_real_l,Y_out_imag_l, sum_real_n_truncation_l);
+	awgn noiser(CLOCK_50,reset,read_ready, readdata_right,0,busy,Y_out_real_r,Y_out_imag_r, sum_real_n_truncation_r);
+
+//---------------adjust here for n---------------------------------ssss------------
 
 
 
