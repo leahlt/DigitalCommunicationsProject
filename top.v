@@ -26,13 +26,29 @@ module top (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	
 	
 	wire signed [23:0] filtered_left, filtered_right, noise, noise_left, noise_right;
+	wire signed [23:0] modulated_writedata_left, modulated_writedata_right, demodulated_writedata_left, demodulated_writedata_right;
+	wire signed [23:0] transmitted_left, transmitted_right, received_left, received_right;
 	
-	
-	assign writedata_left = (write_ready) ? readdata_left:24'b0;
-	assign writedata_right = (write_ready) ? readdata_right:24'b0; //Transfer data from read to write when ready_ready is high
 	assign read = read_ready;
 	assign write = write_ready; //write input flags to output flags
+	
+	//Modulation
+	//BPSK #(24) modulate_left(.DataIn(readdata_left), .DataOut(modulated_writedata_left), .CLK(CLOCK_50), .Flag(1'b1));
+	//BPSK #(24) modulate_right(.DataIn(readdata_right), .DataOut(modulated_writedata_right), .CLK(CLOCK_50), .Flag(1'b1));
+	
+	//transmitter
+	assign transmitted_left = (write_ready) ? readdata_left:24'b0;
+	assign transmitted_right = (write_ready) ? readdata_right:24'b0; //Transfer data from read to write when ready_ready is high
 
+	
+	//receiver
+	mycircuit reciever(.CLOCK_50(CLOCK_50), .read_ready(read_ready), .write_ready(write_ready), .read(read), .write(write), 
+							 .readdata_left(transmitted_left), 
+						    .readdata_right(transmitted_right), .writedata_left(writedata_left), .writedata_right(writedata_right), .reset(reset));
+						  
+	//demodulation
+	//BPSK #(24) demodulate_left(.DataIn(received_left), .DataOut(writedata_left), .CLK(CLOCK_50), .Flag(1'b1));
+	//BPSK #(24) demodulate_right(.DataIn(received_right), .DataOut(writedata_right), .CLK(CLOCK_50), .Flag(1'b1));
 	
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface. 
