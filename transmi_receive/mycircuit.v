@@ -1,7 +1,7 @@
 module mycircuit(CLOCK_50, read_ready, write_ready, read, write, readdata_left, readdata_right, writedata_left, writedata_right, reset);
 
 	wire signed [23:0] noise;
-	noise_generator ng(.clk(CLOCK_50), .enable(1), .Q(noise));
+	//noise_generator ng(.clk(CLOCK_50), .enable(1), .Q(noise));
 
     input CLOCK_50;
 	input read_ready, write_ready,reset;
