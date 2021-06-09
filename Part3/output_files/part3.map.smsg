@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at awgn.v(168): always construct contains both blocking and non-blocking assignments File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v Line: 168
+Warning (10268): Verilog HDL information at bpsk.v(7): always construct contains both blocking and non-blocking assignments File: C:/School/CPEN391/FPGA_ASSIGN/Part3/bpsk.v Line: 7

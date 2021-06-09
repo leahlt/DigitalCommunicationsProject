@@ -1,0 +1,94 @@
+# Compile of mycircuit.v was successful.
+# Compile of mycircuit_tb.v was successful.
+# Compile of ram2.v was successful.
+# Compile of noise_generator.v was successful.
+# Compile of awgn.v was successful.
+# Compile of bpsk.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui -L altera_mf_ver work.mycircuit_tb
+# vsim -gui -L altera_mf_ver work.mycircuit_tb 
+# Start time: 22:55:58 on Jun 08,2021
+# Loading work.mycircuit_tb
+# Loading work.mycircuit
+# Loading work.noise_generator
+# Loading work.ram2
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading work.awgn
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(4): [PCDPC] - Port size (1) does not match connection size (32) for port 'enable'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/ng File: C:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(47): [PCDPC] - Port size (24) does not match connection size (32) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noisel File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(47): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noisel File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(48): [PCDPC] - Port size (24) does not match connection size (32) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noiser File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(48): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noiser File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+add wave -position insertpoint  \
+sim:/mycircuit_tb/writedata_right \
+sim:/mycircuit_tb/writedata_left \
+sim:/mycircuit_tb/write_ready \
+sim:/mycircuit_tb/write \
+sim:/mycircuit_tb/reset \
+sim:/mycircuit_tb/readdata_right \
+sim:/mycircuit_tb/readdata_left \
+sim:/mycircuit_tb/read_ready \
+sim:/mycircuit_tb/read \
+sim:/mycircuit_tb/CLOCK_50
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Admin  Hostname: DESKTOP-9L556KC  ProcessID: 14248
+#           Attempting to use alternate WLF file "./wlft6vc67f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6vc67f
+run
+# ** Note: $stop    : C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v(106)
+#    Time: 103390 ns  Iteration: 0  Instance: /mycircuit_tb
+# Break in Module mycircuit_tb at C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v line 106
+# Compile of mycircuit.v was successful.
+# Compile of mycircuit_tb.v was successful.
+# Compile of ram2.v was successful.
+# Compile of noise_generator.v was successful.
+# Compile of awgn.v was successful.
+# Compile of bpsk.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mycircuit_tb
+# Loading work.mycircuit
+# Loading work.noise_generator
+# Loading work.ram2
+# Loading work.awgn
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(4): [PCDPC] - Port size (1) does not match connection size (32) for port 'enable'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/ng File: C:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(47): [PCDPC] - Port size (24) does not match connection size (32) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noisel File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(47): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noisel File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(48): [PCDPC] - Port size (24) does not match connection size (32) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noiser File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v(48): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit_tb/DUT/noiser File: C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+run
+# ** Note: $stop    : C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v(106)
+#    Time: 103390 ns  Iteration: 0  Instance: /mycircuit_tb
+# Break in Module mycircuit_tb at C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v line 106
+vsim work.mycircuit
+# End time: 23:17:31 on Jun 08,2021, Elapsed time: 0:21:33
+# Errors: 0, Warnings: 12
+# vsim work.mycircuit 
+# Start time: 23:17:31 on Jun 08,2021
+# Loading work.mycircuit
+# Loading work.noise_generator
+# Loading work.ram2
+# ** Error: (vsim-3033) C:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v(64): Instantiation of 'scfifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit/lfifo File: C:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v
+#         Searched libraries:
+#             C:/School/CPEN391/FPGA_ASSIGN/Part3/work
+# ** Error: (vsim-3033) C:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v(64): Instantiation of 'scfifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mycircuit/rfifo File: C:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v
+#         Searched libraries:
+#             C:/School/CPEN391/FPGA_ASSIGN/Part3/work
+# Loading work.awgn
+# Error loading design
+# End time: 23:17:33 on Jun 08,2021, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 0

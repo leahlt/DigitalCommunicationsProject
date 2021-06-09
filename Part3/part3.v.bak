@@ -1,0 +1,150 @@
+
+module part3 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
+		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
+
+	input CLOCK_50, CLOCK2_50;
+	input [0:0] KEY;
+	// I2C Audio/Video config interface
+	output FPGA_I2C_SCLK;
+	inout FPGA_I2C_SDAT;
+	// Audio CODEC
+	output AUD_XCK;
+	input AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK;
+	input AUD_ADCDAT;
+	output AUD_DACDAT;
+	
+	// Local wires.
+	wire read_ready, write_ready, read, write;
+	wire [23:0] readdata_left, readdata_right;
+	wire [23:0] writedata_left, writedata_right;
+	wire reset = ~KEY[0];
+
+	/////////////////////////////////
+	// Your code goes here 
+	/////////////////////////////////
+	
+
+
+	assign write = (write_ready) ? 1 : 0;
+	assign read = (read_ready) ? 1 : 0;
+	reg signed [23:0] temp_left_in;
+	reg signed [23:0] temp_right_in;
+
+	wire [5:0] addr;
+	wire [23:0] ldata_in;
+	wire [23:0] ldata_out;
+	wire lren, lwren, lempty, lfull;
+
+	wire [23:0] rdata_in;
+	wire [23:0] rdata_out;
+	wire rren, rwren, rempty, rfull;
+	reg [23:0] laccum, raccum;
+
+	wire signed [23:0] lsum1, lsum2, rsum1, rsum2;
+	ram2 lfifo(.clock(CLOCK_50), .data(ldata_in), .rdreq(lren), .wrreq(lwren), .empty(lempty), .full(lfull), .q(ldata_out));
+	ram2 rfifo(.clock(CLOCK_50), .data(rdata_in), .rdreq(rren), .wrreq(rwren), .empty(rempty), .full(rfull), .q(rdata_out));
+
+
+	always @(posedge CLOCK_50) begin
+	  	if(read_ready) begin
+			temp_left_in <= readdata_left >>> 6;
+			temp_right_in <= readdata_right >>> 6;  
+		end
+	end
+
+	always @(posedge CLOCK_50) begin
+		if(read_ready && !lfull && !rfull) begin
+			lren <= 1;
+			rren <= 1;
+			lwren <= 0;
+			rwren <= 0;
+			ldata_in <= temp_left_in;
+			rdata_in <= temp_right_in; 
+		end
+		if(read_ready && !lempty && !rempty) begin
+			lwren <= 1;
+			rwren <= 1;
+			lren <= 0;
+			rren <= 0;
+		end
+		else{
+			lren <= 0;
+			rren <= 0;
+			lwren <= 0;
+			rwren <= 0;
+		}
+	end
+	assign lsum1 = temp_left_in - ldata_out;
+	assign rsum1 = temp_right_in - rdata_out;
+
+	always @(posedge CLOCK_50) begin
+		laccum <= laccum + lsum2;
+		raccum <= raccum + rsum2;
+	end
+
+	assign lsum2 = laccum + lsum1;
+	assign rsum2 = raccum + rsum1;
+
+	assign writedata_left = (write_wready) ? lsum2 : 0;
+	assign writedata_right = (write_wready) ? rsum2 : 0;
+	
+
+
+	
+/////////////////////////////////////////////////////////////////////////////////
+// Audio CODEC interface. 
+//
+// The interface consists of the following wires:
+// read_ready, write_ready - CODEC ready for read/write operation 
+// readdata_left, readdata_right - left and right channel data from the CODEC
+// read - send data from the CODEC (both channels)
+// writedata_left, writedata_right - left and right channel data to the CODEC
+// write - send data to the CODEC (both channels)
+// AUD_* - should connect to top-level entity I/O of the same name.
+//         These signals go directly to the Audio CODEC
+// I2C_* - should connect to top-level entity I/O of the same name.
+//         These signals go directly to the Audio/Video Config module
+/////////////////////////////////////////////////////////////////////////////////
+	clock_generator my_clock_gen(
+		// inputs
+		CLOCK2_50,
+		reset,
+
+		// outputs
+		AUD_XCK
+	);
+
+	audio_and_video_config cfg(
+		// Inputs
+		CLOCK_50,
+		reset,
+
+		// Bidirectionals
+		FPGA_I2C_SDAT,
+		FPGA_I2C_SCLK
+	);
+
+	audio_codec codec(
+		// Inputs
+		CLOCK_50,
+		reset,
+
+		read,	write,
+		writedata_left, writedata_right,
+
+		AUD_ADCDAT,
+
+		// Bidirectionals
+		AUD_BCLK,
+		AUD_ADCLRCK,
+		AUD_DACLRCK,
+
+		// Outputs
+		read_ready, write_ready,
+		readdata_left, readdata_right,
+		AUD_DACDAT
+	);
+
+endmodule
+
+

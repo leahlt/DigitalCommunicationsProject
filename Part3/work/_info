@@ -1,0 +1,137 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/School/CPEN391/FPGA_ASSIGN/Part2
+vawgn
+Z0 !s110 1623219295
+!i10b 1
+!s100 Q2z<551fLUlc6>n[h23bL3
+Igg=50j7G:cE_aaK8g]hdj2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/School/CPEN391/FPGA_ASSIGN/Part3
+w1623214124
+8C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+FC:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v
+L0 28
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1623219295.000000
+!s107 C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/FPGA_ASSIGN/Part3/awgn.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vBPSK
+R0
+!i10b 1
+!s100 8QT2nmd_>c?GI_D4L3_GV3
+I[1]ajkiFW8>4:S;IgP:kT3
+R1
+R2
+w1623217740
+8C:/School/CPEN391/FPGA_ASSIGN/Part3/bpsk.v
+FC:/School/CPEN391/FPGA_ASSIGN/Part3/bpsk.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/School/CPEN391/FPGA_ASSIGN/Part3/bpsk.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/FPGA_ASSIGN/Part3/bpsk.v|
+!i113 1
+R5
+R6
+n@b@p@s@k
+vmycircuit
+R0
+!i10b 1
+!s100 SRE<j@0`R4nP25OIhGdkg3
+IU3[<<S0_lPb56f[z]i>AB0
+R1
+R2
+w1623216713
+8C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v
+FC:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit.v|
+!i113 1
+R5
+R6
+vmycircuit_tb
+R0
+!i10b 1
+!s100 MfcfliHzNzJkenkk2FJE13
+IV?fngOAWA6KEeN<S5d1AU0
+R1
+R2
+w1623210949
+8C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v
+FC:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/FPGA_ASSIGN/Part3/mycircuit_tb.v|
+!i113 1
+R5
+R6
+vnoise_generator
+R0
+!i10b 1
+!s100 XI2d_nVLHC[AfGNmJV;0g3
+I^7n9HzDEFK5MLA0Yi<]:O1
+R1
+R2
+w1623024205
+8C:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v
+FC:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/FPGA_ASSIGN/Part3/noise_generator.v|
+!i113 1
+R5
+R6
+vram2
+R0
+!i10b 1
+!s100 h[UO10A;0U1T9M7?bQAI73
+IWFmkeQ_[X=>DN;]UPTVS]1
+R1
+R2
+w1623216726
+8C:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v
+FC:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v
+L0 40
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/FPGA_ASSIGN/Part3/ram2.v|
+!i113 1
+R5
+R6
