@@ -57,9 +57,12 @@ assign w = (data2<(y*1))?0:
 			(data2<(y*28))?27:
 			(data2<(y*29))?28:
 			(data2<(y*30))?29:
-			(data2<(y*31))?30:31;
+			(data2<(y*31))?30:
+			(data2<(y*32))?31:0;
 
-assign data3 = {x,w};
+assign data3 = {w,x};
+
+
 
 //check and make negative again if needed
 
