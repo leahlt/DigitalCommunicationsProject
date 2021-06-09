@@ -1,7 +1,7 @@
 module mycircuit(CLOCK_50, read_ready, write_ready, read, write, readdata_left, readdata_right, writedata_left, writedata_right, reset);
 
 	wire signed [23:0] noise;
-	noise_generator ng(.clk(CLOCK_50), .enable(1), .Q(noise));
+	//noise_generator ng(.clk(CLOCK_50), .enable(1), .Q(noise));
 
     input wire CLOCK_50, read_ready, write_ready,reset;
     output wire read, write;
@@ -34,8 +34,8 @@ module mycircuit(CLOCK_50, read_ready, write_ready, read, write, readdata_left, 
 	ram2 lfifo(.clock(CLOCK_50), .data(ldata_in), .rdreq(lren), .wrreq(lwren), .empty(lempty), .full(lfull), .q(ldata_out));
 	ram2 rfifo(.clock(CLOCK_50), .data(rdata_in), .rdreq(rren), .wrreq(rwren), .empty(rempty), .full(rfull), .q(rdata_out));
 
-    assign s_readdata_left = readdata_left + noise;
-    assign s_readdata_right = readdata_right + noise;
+    assign s_readdata_left = readdata_left; //+ noise;
+    assign s_readdata_right = readdata_right; // + noise;
 //---------------adjust here for n---------------------------------------------
 
 
