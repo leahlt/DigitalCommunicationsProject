@@ -7,7 +7,13 @@ module rc4_top_tb();
    reg 	      rdy_de, rdy_en, done_en, done_de;
    
    reg 	      valid;
-  
+   task delay(input [31:0] num);
+      integer i;
+      
+      for (i=0; i<num; i=i+1)
+	@(posedge clk) ;
+   endtask// delay
+   
    
    rc4_top DUT(clk, rst, password, data_in, data_out, valid1, valid);
    initial begin
@@ -37,46 +43,48 @@ module rc4_top_tb();
       valid <= 0;
       valid1 <= 0;
       
-      #10;
+      delay(2);
       rst <= 0;
-      password <= 57248;
-      #8500;
+      password <= 137;
+      delay(1000);
+      
 
       
 
-      #10;
+      delay(2);
       valid1 <= 1;
       
       data_in <= 5;
-      #10;
+      delay(2);
       
       data_in <= 10;
-      #10;
+      delay(2);
       data_in <= 20;
-      #10;
+      delay(2);
       data_in <= 30;
-      #10;
+      delay(2);
       data_in <= 40;
-      #40;
+      delay(2);
       valid1 <= 0;
       
  
       valid <= 1;
       
-      #10;
+      delay(10);
   
       
 
       
-      #120;
+      delay(120);
+      
   
       
       valid <= 0;
       
-      #10;
+      delay(10);
 
       
-      #20;
+      delay(2);
       done_de <= 0;
       done_en <= 0;
 
@@ -84,39 +92,38 @@ module rc4_top_tb();
 
 
       
-      #100;
+      delay(100);
    
-      #10;
+      delay(10);
       
       valid1 <= 1;
       
       data_in <= 5;
-      #20;
+      delay(2);
       
       data_in <= 10;
-      #20;
+      delay(2);
       data_in <= 20;
-      #20;
+      delay(2);
       data_in <= 30;
-      #20;
+      delay(2);
       data_in <= 40;
-      #40;
+      delay(4);
       valid1 <= 0;
       
-      #10;
+      delay(10);
       valid <= 1;
       
       
 
       
-      #120;
+      delay(130);
       
 
       valid <= 0;
       
-      #10;
+      delay(10);
       
-      #20;
 
       
          

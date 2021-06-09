@@ -135,7 +135,8 @@ endwhile
 	  
 	  `KSS_CRYPTO: begin
 	     if(rst) KSState <= `RST_STATE;
-	     
+	     else if(!valid) KSState <= `RDY_STATE;
+
 	     else begin
 		S[i] <= S[j];
 		S[j] <= S[i]; // We can do this because of verilog.
@@ -147,6 +148,7 @@ endwhile
 	  
 	  `KSS_CRYPTO2: begin
 	     if(rst) KSState <= `RST_STATE;
+	     else if(!valid) KSState <= `RDY_STATE;
 
 	     else begin
 		K <= S[tmp];//S[ S[i]+S[j] ];
