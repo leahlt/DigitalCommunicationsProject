@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2021.06.08.10:57:56"
+ date="2021.06.09.17:22:27"
  outputDirectory="C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/">
  <perimeter>
   <parameter
@@ -24,7 +24,7 @@
   <parameter
      name="AUTO_DEVICE"
      type="String"
-     defaultValue="5CSEMA2U23C6"
+     defaultValue="5CSEMA5F31C6"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -83,14 +83,14 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="BCH_enc:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA2U23C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1623175033,AUTO_UNIQUE_ID=(altera_bch:18.1:BCH=Encoder,DATA_WIDTH=8,IRRPOL=17475,K_BITS=8224,M_BITS=14,N_BITS=8784,PARITY_BITS=560,T_BITS=40,design_env=NATIVE,selected_device_family=Cyclone V)"
+   parameterizationKey="BCH_enc:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1623284546,AUTO_UNIQUE_ID=(altera_bch:18.1:BCH=Encoder,DATA_WIDTH=8,IRRPOL=285,K_BITS=128,M_BITS=8,N_BITS=204,PARITY_BITS=76,T_BITS=10,design_env=NATIVE,selected_device_family=Cyclone V)"
    instancePathKey="BCH_enc"
    kind="BCH_enc"
    version="1.0"
    name="BCH_enc">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1623175033" />
-  <parameter name="AUTO_DEVICE" value="5CSEMA2U23C6" />
+  <parameter name="AUTO_GENERATION_ID" value="1623284546" />
+  <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
@@ -158,21 +158,21 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_bch:18.1:BCH=Encoder,DATA_WIDTH=8,IRRPOL=17475,K_BITS=8224,M_BITS=14,N_BITS=8784,PARITY_BITS=560,T_BITS=40,design_env=NATIVE,selected_device_family=Cyclone V"
+   parameterizationKey="altera_bch:18.1:BCH=Encoder,DATA_WIDTH=8,IRRPOL=285,K_BITS=128,M_BITS=8,N_BITS=204,PARITY_BITS=76,T_BITS=10,design_env=NATIVE,selected_device_family=Cyclone V"
    instancePathKey="BCH_enc:.:bch_0"
    kind="altera_bch"
    version="18.1"
    name="BCH_enc_bch_0">
-  <parameter name="T_BITS" value="40" />
+  <parameter name="T_BITS" value="10" />
   <parameter name="DATA_WIDTH" value="8" />
-  <parameter name="N_BITS" value="8784" />
+  <parameter name="N_BITS" value="204" />
   <parameter name="BCH" value="Encoder" />
-  <parameter name="M_BITS" value="14" />
+  <parameter name="M_BITS" value="8" />
   <parameter name="selected_device_family" value="Cyclone V" />
-  <parameter name="PARITY_BITS" value="560" />
+  <parameter name="PARITY_BITS" value="76" />
   <parameter name="design_env" value="NATIVE" />
-  <parameter name="K_BITS" value="8224" />
-  <parameter name="IRRPOL" value="17475" />
+  <parameter name="K_BITS" value="128" />
+  <parameter name="IRRPOL" value="285" />
   <generatedFiles>
    <file
        path="C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_enc/synthesis/submodules/bch_enc_package.vhd"

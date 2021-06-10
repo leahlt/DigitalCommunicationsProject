@@ -20,7 +20,7 @@
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
- <parameter name="device" value="5CSEMA2U23C6" />
+ <parameter name="device" value="5CSEMA5F31C6" />
  <parameter name="deviceFamily" value="Cyclone V" />
  <parameter name="deviceSpeedGrade" value="6" />
  <parameter name="fabricMode" value="QSYS" />
@@ -66,9 +66,9 @@
    autoexport="1">
   <parameter name="BCH" value="Encoder" />
   <parameter name="DATA_WIDTH" value="8" />
-  <parameter name="M_BITS" value="14" />
-  <parameter name="N_BITS" value="8784" />
-  <parameter name="T_BITS" value="40" />
+  <parameter name="M_BITS" value="8" />
+  <parameter name="N_BITS" value="204" />
+  <parameter name="T_BITS" value="10" />
   <parameter name="design_env" value="NATIVE" />
   <parameter name="selected_device_family" value="Cyclone V" />
  </module>

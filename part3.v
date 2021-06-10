@@ -22,35 +22,52 @@ module part3 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	/////////////////////////////////
 	// Your code goes here 
 	/////////////////////////////////
-	wire [23:0] modulator_out_l, modulator_out_r;
-	wire [23:0] demodulator_in_l, demodulator_in_r;
-	wire [23:0] rc4_en_l_out, rc4_en_r_out, rc4_de_l_in, rc4_de_r_in;
-	wire [23:0] error_enc_out_l,error_enc_out_r;
-	wire [23:0] error_dec_in_l,error_dec_in_r, error_dec_out_l, error_dec_out_r;
 
+
+	wire [23:0] rc4_en_l_out, rc4_en_r_out, rc4_de_l_in, rc4_de_r_in;
+
+	wire [7:0] error_dec_in_l,error_dec_in_r, error_dec_out_l, error_dec_out_r;
+	wire [7:0] compressed_out_l,compressed_out_r;
+	wire [7:0] error_enc_out_l,error_enc_out_r;
+	wire [7:0] modulator_out_l, modulator_out_r;
+	wire [7:0] demodulator_in_l, demodulator_in_r;
+	
 	wire init_done_de_l, init_done_de_r, init_done_en_l, init_done_en_r;
 
+	//RC4 encryption
 	encrypt rc4_en_l(CLOCK_50, reset, 1234, readdata_left, rc4_en_l_out, init_done_en_l);
 	encrypt rc4_en_r(CLOCK_50, reset, 1234, readdata_right, rc4_en_r_out, init_done_en_r);
 
-	BPSK modulator_l(rc4_en_l_out, modulator_out_l, CLOCK_50, 1);
-	BPSK modulator_r(rc4_en_r_out, modulator_out_r, CLOCK_50, 1);
-	//BPSK modulator_l(readdata_left, modulator_out_l, CLOCK_50, 1);
-	//BPSK modulator_r(readdata_right, modulator_out_r, CLOCK_50, 1);
+	//A-Law Compression
+	Alaw compress_l(.INPUT(rc4_en_l_out), .OUTPUT(compressed_out_l));
+	Alaw compress_r(.INPUT(rc4_en_r_out), .OUTPUT(compressed_out_r));
 	
-	BCH_enc_ctrl #(24) error_enc_l(.clk(CLOCK_50), .reset(reset), .data_in(modulator_out_l), .data_enc(error_enc_out_l));
-	BCH_enc_ctrl #(24) error_enc_r(.clk(CLOCK_50), .reset(reset), .data_in(modulator_out_r), .data_enc(error_enc_out_r));
+	//BCH encoding
+	BCH_enc_ctrl #(8) error_enc_l(.clk(CLOCK_50), .reset(reset), .data_in(compressed_out_l), .data_enc(error_enc_out_l));
+	BCH_enc_ctrl #(8) error_enc_r(.clk(CLOCK_50), .reset(reset), .data_in(compressed_out_r), .data_enc(error_enc_out_r));
 	
-	mycircuit circuit(CLOCK_50, read_ready, write_ready, read, write, error_enc_out_l, error_enc_out_r, error_dec_in_l, error_dec_in_r, reset);
-	
-	BCH_dec_ctrl #(24) error_dec_l(.clk(clk), .reset(reset), .data_in(error_dec_in_l), .data_dec(error_dec_out_l));
-	BCH_dec_ctrl #(24) error_dec_r(.clk(clk), .reset(reset), .data_in(error_dec_in_r), .data_dec(error_dec_out_r));
+	//BPSK modulation
+	BPSK modulator_l(.DataIn(error_enc_out_l), .DataOut(modulator_out_l), .CLK(CLOCK_50), .Flag(1'b1));
+	BPSK modulator_r(.DataIn(error_enc_out_r), .DataOut(modulator_out_r), .CLK(CLOCK_50), .Flag(1'b1));
 
-	//BPSK demodulator_l(demodulator_in_l, writedata_left , CLOCK_50, 1);
-	//BPSK demodulator_r(demodulator_in_r,  writedata_right, CLOCK_50, 1);
-	BPSK demodulator_l(error_dec_out_l, rc4_de_l_in , CLOCK_50, 1);
-	BPSK demodulator_r(error_dec_out_r, rc4_de_r_in , CLOCK_50, 1);
+	//Channel: AWGN
+	mycircuit circuit(.CLOCK_50(CLOCK_50), .read_ready(read_ready), .write_ready(write_ready),
+					      .read(read), .write(write), .readdata_left(modulator_out_l), .readdata_right(modulator_out_r), 
+							.writedata_left(demodulator_in_l), .writedata_right(demodulator_in_r), .reset(reset));
 
+	//BPSK demodulation
+	BPSK demodulator_l(.DataIn(demodulator_in_l), .DataOut(error_dec_in_l) , .CLK(CLOCK_50), .Flag(1'b1));
+	BPSK demodulator_r(.DataIn(demodulator_in_r), .DataOut(error_dec_in_r) , .CLK(CLOCK_50), .Flag(1'b1));
+	
+	//BCH decoding
+	BCH_dec_ctrl #(8) error_dec_l(.clk(clk), .reset(reset), .data_in(error_dec_in_l), .data_dec(error_dec_out_l));
+	BCH_dec_ctrl #(8) error_dec_r(.clk(clk), .reset(reset), .data_in(error_dec_in_r), .data_dec(error_dec_out_r));
+	
+	//A-Law Decompression
+	deAlaw decompress_l(.INPUT(error_dec_out_l), .OUTPUT(rc4_de_l_in));
+	deAlaw decompress_r(.INPUT(error_dec_out_r), .OUTPUT(rc4_de_r_in));
+	
+	//RC4 decryption
 	decrypt rc4_de_l(CLOCK_50, reset, 1234, rc4_de_l_in, writedata_left, init_done_en_l);
 	decrypt rc4_de_r(CLOCK_50, reset, 1234, rc4_de_r_in, writedata_right, init_done_en_r);
 

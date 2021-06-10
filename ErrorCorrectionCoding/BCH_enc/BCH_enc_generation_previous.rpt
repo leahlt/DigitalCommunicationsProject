@@ -1,5 +1,5 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc.qsys" --block-symbol-file --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc" --family="Cyclone V" --part=5CSEMA5F31C6
+Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc.qsys" --block-symbol-file --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc" --family="Cyclone V" --part=5CSEMA2U23C6
 Progress: Loading ErrorCorrectionCoding/BCH_enc.qsys
 Progress: Reading input file
 Progress: Adding bch_0 [altera_bch 18.1]
@@ -12,7 +12,7 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc.qsys" --synthesis=VERILOG --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Info: qsys-generate "C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc.qsys" --synthesis=VERILOG --output-directory="C:\Users\romin\OneDrive - The University Of British Columbia\ELEC2020_2021_docs\ELEC391\ErrorCorrectionCoding\BCH_enc\synthesis" --family="Cyclone V" --part=5CSEMA2U23C6
 Progress: Loading ErrorCorrectionCoding/BCH_enc.qsys
 Progress: Reading input file
 Progress: Adding bch_0 [altera_bch 18.1]

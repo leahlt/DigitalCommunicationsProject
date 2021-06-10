@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2021.06.08.11:01:14"
+ date="2021.06.09.17:24:57"
  outputDirectory="C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/">
  <perimeter>
   <parameter
@@ -88,13 +88,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="BCH_dec:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1623175257,AUTO_UNIQUE_ID=(altera_bch:18.1:BCH=Decoder,DATA_WIDTH=8,IRRPOL=17475,K_BITS=8224,M_BITS=14,N_BITS=8784,PARITY_BITS=560,T_BITS=40,design_env=NATIVE,selected_device_family=Cyclone V)"
+   parameterizationKey="BCH_dec:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1623284695,AUTO_UNIQUE_ID=(altera_bch:18.1:BCH=Decoder,DATA_WIDTH=8,IRRPOL=285,K_BITS=128,M_BITS=8,N_BITS=204,PARITY_BITS=76,T_BITS=10,design_env=NATIVE,selected_device_family=Cyclone V)"
    instancePathKey="BCH_dec"
    kind="BCH_dec"
    version="1.0"
    name="BCH_dec">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1623175257" />
+  <parameter name="AUTO_GENERATION_ID" value="1623284695" />
   <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -239,38 +239,38 @@
    <message level="Debug">Transform: ResetAdaptation</message>
    <message level="Debug" culprit="BCH_dec"><![CDATA["<b>BCH_dec</b>" reuses <b>altera_bch</b> "<b>submodules/BCH_dec_bch_0</b>"]]></message>
    <message level="Debug" culprit="BCH_dec">queue size: 0 starting:altera_bch "submodules/BCH_dec_bch_0"</message>
-   <message level="Info" culprit="bch_0">code_clocks = 1098, polys_per_pe = 40, full_pes = 0, pes = 1 clocks_per_last_pe = 40</message>
+   <message level="Info" culprit="bch_0">code_clocks = 26, polys_per_pe = 10, full_pes = 0, pes = 1 clocks_per_last_pe = 10</message>
    <message level="Info" culprit="bch_0">----Writing bchp_mb_system.vhd</message>
    <message level="Info" culprit="bch_0">----Writing bchp_auto_package.vhd</message>
    <message level="Info" culprit="bch_0">Building Galois Field and inverses. Please wait...</message>
    <message level="Info" culprit="bch_0">GF_field finished</message>
-   <message level="Info" culprit="bch_0">negenum finished with length 16384</message>
-   <message level="Info" culprit="bch_0">powernum finished with length 16384</message>
-   <message level="Info" culprit="bch_0">inverses finished with length 16384</message>
+   <message level="Info" culprit="bch_0">negenum finished with length 256</message>
+   <message level="Info" culprit="bch_0">powernum finished with length 256</message>
+   <message level="Info" culprit="bch_0">inverses finished with length 256</message>
    <message level="Info" culprit="bch_0">----Writing bchp_roots.vhd</message>
    <message level="Info" culprit="bch_0">----Writing bchp_invmem.hex</message>
    <message level="Info" culprit="bch_0">----Writing bchp_parameters.vhd</message>
-   <message level="Info" culprit="bch_0">files generated: C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_mb_system.vhd C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_auto_package.vhd C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_roots.vhd C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_invmem.hex C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_parameters.vhd</message>
+   <message level="Info" culprit="bch_0">files generated: C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_mb_system.vhd C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_auto_package.vhd C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_roots.vhd C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_invmem.hex C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_parameters.vhd</message>
    <message level="Info" culprit="bch_0"><![CDATA["<b>BCH_dec</b>" instantiated <b>altera_bch</b> "<b>bch_0</b>"]]></message>
   </messages>
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_bch:18.1:BCH=Decoder,DATA_WIDTH=8,IRRPOL=17475,K_BITS=8224,M_BITS=14,N_BITS=8784,PARITY_BITS=560,T_BITS=40,design_env=NATIVE,selected_device_family=Cyclone V"
+   parameterizationKey="altera_bch:18.1:BCH=Decoder,DATA_WIDTH=8,IRRPOL=285,K_BITS=128,M_BITS=8,N_BITS=204,PARITY_BITS=76,T_BITS=10,design_env=NATIVE,selected_device_family=Cyclone V"
    instancePathKey="BCH_dec:.:bch_0"
    kind="altera_bch"
    version="18.1"
    name="BCH_dec_bch_0">
-  <parameter name="T_BITS" value="40" />
+  <parameter name="T_BITS" value="10" />
   <parameter name="DATA_WIDTH" value="8" />
-  <parameter name="N_BITS" value="8784" />
+  <parameter name="N_BITS" value="204" />
   <parameter name="BCH" value="Decoder" />
-  <parameter name="M_BITS" value="14" />
+  <parameter name="M_BITS" value="8" />
   <parameter name="selected_device_family" value="Cyclone V" />
-  <parameter name="PARITY_BITS" value="560" />
+  <parameter name="PARITY_BITS" value="76" />
   <parameter name="design_env" value="NATIVE" />
-  <parameter name="K_BITS" value="8224" />
-  <parameter name="IRRPOL" value="17475" />
+  <parameter name="K_BITS" value="128" />
+  <parameter name="IRRPOL" value="285" />
   <generatedFiles>
    <file
        path="C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/ErrorCorrectionCoding/BCH_dec/synthesis/submodules/bchp_functions.vhd"
@@ -389,18 +389,18 @@
   <instantiator instantiator="BCH_dec" as="bch_0" />
   <messages>
    <message level="Debug" culprit="BCH_dec">queue size: 0 starting:altera_bch "submodules/BCH_dec_bch_0"</message>
-   <message level="Info" culprit="bch_0">code_clocks = 1098, polys_per_pe = 40, full_pes = 0, pes = 1 clocks_per_last_pe = 40</message>
+   <message level="Info" culprit="bch_0">code_clocks = 26, polys_per_pe = 10, full_pes = 0, pes = 1 clocks_per_last_pe = 10</message>
    <message level="Info" culprit="bch_0">----Writing bchp_mb_system.vhd</message>
    <message level="Info" culprit="bch_0">----Writing bchp_auto_package.vhd</message>
    <message level="Info" culprit="bch_0">Building Galois Field and inverses. Please wait...</message>
    <message level="Info" culprit="bch_0">GF_field finished</message>
-   <message level="Info" culprit="bch_0">negenum finished with length 16384</message>
-   <message level="Info" culprit="bch_0">powernum finished with length 16384</message>
-   <message level="Info" culprit="bch_0">inverses finished with length 16384</message>
+   <message level="Info" culprit="bch_0">negenum finished with length 256</message>
+   <message level="Info" culprit="bch_0">powernum finished with length 256</message>
+   <message level="Info" culprit="bch_0">inverses finished with length 256</message>
    <message level="Info" culprit="bch_0">----Writing bchp_roots.vhd</message>
    <message level="Info" culprit="bch_0">----Writing bchp_invmem.hex</message>
    <message level="Info" culprit="bch_0">----Writing bchp_parameters.vhd</message>
-   <message level="Info" culprit="bch_0">files generated: C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_mb_system.vhd C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_auto_package.vhd C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_roots.vhd C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_invmem.hex C:/Users/romin/AppData/Local/Temp/alt8786_8958231868276074480.dir/0002_bch_0_gen//bchp_parameters.vhd</message>
+   <message level="Info" culprit="bch_0">files generated: C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_mb_system.vhd C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_auto_package.vhd C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_roots.vhd C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_invmem.hex C:/Users/romin/AppData/Local/Temp/alt8788_3984703078249375497.dir/0002_bch_0_gen//bchp_parameters.vhd</message>
    <message level="Info" culprit="bch_0"><![CDATA["<b>BCH_dec</b>" instantiated <b>altera_bch</b> "<b>bch_0</b>"]]></message>
   </messages>
  </entity>

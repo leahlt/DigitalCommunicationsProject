@@ -67,9 +67,9 @@
    autoexport="1">
   <parameter name="BCH" value="Decoder" />
   <parameter name="DATA_WIDTH" value="8" />
-  <parameter name="M_BITS" value="14" />
-  <parameter name="N_BITS" value="8784" />
-  <parameter name="T_BITS" value="40" />
+  <parameter name="M_BITS" value="8" />
+  <parameter name="N_BITS" value="204" />
+  <parameter name="T_BITS" value="10" />
   <parameter name="design_env" value="NATIVE" />
   <parameter name="selected_device_family" value="Cyclone V" />
  </module>

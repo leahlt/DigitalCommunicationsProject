@@ -56,7 +56,7 @@ BEGIN
   zerodelta <= conv_std_logic_vector (0,m_bits);
 
   comp_01: bchp_mb_pex 
-  GENERIC MAP (speed=>6,startloop=>0,endloop=>78)
+  GENERIC MAP (speed=>6,startloop=>0,endloop=>18)
   PORT MAP (sysclk=>sysclk,reset=>reset,enable=>enable,start=>start,syndromesin=>zerosyndromes,
             bdsin=>zerobds,bdsprevin=>zerobdsprev,llnumberin=>zeroll,deltain=>zerodelta,
 

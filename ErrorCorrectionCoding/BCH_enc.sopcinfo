@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="BCH_enc" kind="BCH_enc" version="1.0" fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2021.06.08.10:57:13 -->
+ <!-- 2021.06.09.17:22:26 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1623175033</value>
+  <value>1623284546</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -32,7 +32,7 @@
  </parameter>
  <parameter name="AUTO_DEVICE">
   <type>java.lang.String</type>
-  <value>5CSEMA2U23C6</value>
+  <value>5CSEMA5F31C6</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -126,7 +126,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="M_BITS">
    <type>int</type>
-   <value>14</value>
+   <value>8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -134,7 +134,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="N_BITS">
    <type>int</type>
-   <value>8784</value>
+   <value>204</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -142,7 +142,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="T_BITS">
    <type>int</type>
-   <value>40</value>
+   <value>10</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -150,7 +150,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="PARITY_BITS">
    <type>int</type>
-   <value>560</value>
+   <value>76</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -158,7 +158,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="K_BITS">
    <type>int</type>
-   <value>8224</value>
+   <value>128</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -166,7 +166,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="IRRPOL">
    <type>int</type>
-   <value>17475</value>
+   <value>285</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
