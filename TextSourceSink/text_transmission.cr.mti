@@ -1,0 +1,15 @@
+{C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/TextSourceSink/RAM.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/TextSourceSink/RAM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/TextSourceSink/ROM.v} {1 {vlog -work work -stats=none {C:/Users/romin/OneDrive - The University Of British Columbia/ELEC2020_2021_docs/ELEC391/TextSourceSink/ROM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROM
+
+Top level modules:
+	ROM
+
+} {} {}}
