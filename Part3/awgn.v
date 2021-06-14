@@ -1,24 +1,3 @@
-/**********************************************************************************************/
-// The f_x1 sequence is construncted using the primitive polynomial
-// 1+ x^1 + x^5 + x^6 + x^8
-// The f_x1 is initialized with f_x1=18'h3ffff
-
-// The g_x2_cos sequence is construncted using the primitive polynomial
-// 1+ x^1 + x^5 + x^6 + x^8
-// The g_x2_cos is initialized with g_x2_cos=10'h3ff
-
-// The g_x2_sin sequence is construncted using the primitive polynomial
-//1+ x^1 + x^5 + x^6 + x^8
-// The g_x2_sin is initialized with g_x2_cos=10'b1000000000
-
-// The noise out n_real = sigma*(f_x1 * g_x2_cos)
-// The noise out n_imag = sigma*(f_x1 * g_x2_sin)
-
-// The Y_out_real = X_in_real + n_real
-// The Y_out_imag = X_in_imag + n_imag
-/**********************************************************************************************/
-
-
 `timescale 1 ns / 100ps
 `define Bi 	24	                 //Input data width
 `define SNR_dB 8                //SNR_dB value
@@ -104,9 +83,7 @@ parameter g_x2_step_high=242; //g_x2_step_high=0.95*255
 parameter g_x2_step_low=-242; //g_x2_step_low=-0.95*255
 parameter sqrt_2 = 360; //sqrt_2=1.414*255
 
-parameter sigma_0dB=180; //sigma_0dB=0.707*255
-parameter sigma_1dB=161; //sigma_1dB=0.63*255
-parameter sigma_2dB=143; //sigma_2dB=0.562*255
+//sigma = sqrt(1/(2*(10^(SNR/10))))*255;
 parameter sigma_3dB=128; //sigma_3dB=0.5*255
 parameter sigma_4dB=114; //sigma_4dB=0.4462*255
 parameter sigma_5dB=102; //sigma_5dB=0.398*255
@@ -114,19 +91,25 @@ parameter sigma_6dB=90; //sigma_6dB=0.354*255
 parameter sigma_7dB=81; //sigma_7dB=0.316*255
 parameter sigma_8dB=72; //sigma_8dB=0.2815*255
 parameter sigma_9dB=64; //sigma_9dB=0.251*255
+parameter sigma_10dB=57;//sigma_10dB=0.22*255
+parameter sigma_11dB=51;//sigma_10dB=0.20*255
+parameter sigma_12dB=45;//sigma_10dB=0.18*255
 
 integer i, j, temp_f_x1,sin, temp_noise_real_integer, temp_noise_imag_integer;
 integer sum_real_n_temp_integer, g_x2_cos_out_integer;
 
-//real sigma_0dB=0.7071;
-//real sigma_1dB=0.63, sigma_2dB=0.562, sigma_3dB=0.5,sigma_4dB=0.4462,
-//     sigma_5dB=0.398, sigma_6dB=0.354, sigma_7dB=0.316, sigma_8dB=0.2815, sigma_9dB=0.251;
-//real step_gap1=0.69, step_gap2=0.529, step_gap3=0.446, step_gap4=0.393, step_gap5=0.356;
-//real high_step=0.246;
-//real step1=1.665, step2=2.355, step3=2.884, step4=3.33, step5=3.723;
-//real g_x2_step_high=0.95, g_x2_step_low=-0.95;
-//real g_x2_gap=0.05;
-//real sqrt_2=1.414;
+
+wire [23:0] real_temp_af_fir;
+wire [23:0] imag_temp_af_fir;
+wire [7:0] real_1,real_2,real_3;
+wire [7:0] real_fir_1,real_fir_2,real_fir_3;
+wire [7:0] imag_1,imag_2,imag_3;
+assign real_3=X_in_real[23:16];
+assign real_2=X_in_real[15:8];
+assign real_1=X_in_real[7:0];
+assign imag_3=X_in_real[23:16];
+assign imag_2=X_in_real[15:8];
+assign imag_1=X_in_real[7:0];
 
 
 initial
@@ -141,13 +124,24 @@ begin
     i=0;
     j=1;
 end
-
+	 //use fir filter to minic multipath
+    fir_filter fir1(.clk(clk), .rst(reset), .data_in(real_3), .data_out(real_fir_3));
+	 fir_filter fir2(.clk(clk), .rst(reset), .data_in(real_2), .data_out(real_fir_2));
+    fir_filter fir3(.clk(clk), .rst(reset), .data_in(real_1), .data_out(real_fir_1));
+	 assign real_temp_af_fir={real_fir_3,real_fir_2,real_fir_1};
+	 
+	 fir_filter fir4(.clk(clk), .rst(reset), .data_in(real_3), .data_out(imag_fir_3));
+	 fir_filter fir5(.clk(clk), .rst(reset), .data_in(real_2), .data_out(imag_fir_2));
+    fir_filter fir6(.clk(clk), .rst(reset), .data_in(real_1), .data_out(imag_fir_1));
+	 assign imag_temp_af_fir={imag_fir_3,imag_fir_2,imag_fir_1};
+	 
 always@ (posedge clk)
 begin
-    if(reset==1'b0 && read==1'b1 && i < `DATA)
-    begin
-        temp_X_in_real=X_in_real;
-        temp_X_in_imag=X_in_imag;
+    if(reset==1'b0 && read==1'b1 && i < `DATA) begin
+	 
+	 //Antenuation
+	 temp_X_in_real=real_temp_af_fir >> 16;
+    temp_X_in_imag=imag_temp_af_fir >> 16;
         i=i+1;
         busy=1;
     end
@@ -324,27 +318,6 @@ begin
         
             
             //*************** Y=X+(sigma*n) *******************
-            if(`SNR_dB==0)
-            begin
-                noise_real = sigma_0dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
-            end
-            if(`SNR_dB==1)
-            begin
-                noise_real = sigma_1dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
-            end
-            if(`SNR_dB==2)
-            begin
-                noise_real = sigma_2dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
-            end
             if(`SNR_dB==3)
             begin
                 noise_real = sigma_3dB * sum_real_n;
@@ -390,6 +363,27 @@ begin
             if(`SNR_dB==9)
             begin
                 noise_real = sigma_9dB * sum_real_n;
+                noise_real_truncation[11:0] = noise_real[27:16];
+                temp_noise_real_integer = noise_real_truncation;
+                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+            end
+				if(`SNR_dB==10)
+            begin
+                noise_real = sigma_10dB * sum_real_n;
+                noise_real_truncation[11:0] = noise_real[27:16];
+                temp_noise_real_integer = noise_real_truncation;
+                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+            end
+				if(`SNR_dB==11)
+            begin
+                noise_real = sigma_11dB * sum_real_n;
+                noise_real_truncation[11:0] = noise_real[27:16];
+                temp_noise_real_integer = noise_real_truncation;
+                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+            end
+				if(`SNR_dB==12)
+            begin
+                noise_real = sigma_12dB * sum_real_n;
                 noise_real_truncation[11:0] = noise_real[27:16];
                 temp_noise_real_integer = noise_real_truncation;
                 Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
