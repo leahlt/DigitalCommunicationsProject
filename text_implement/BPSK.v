@@ -1,5 +1,5 @@
 module BPSK (DataIn, DataOut, CLK, Flag);
-parameter n=7; //default value is set for hamming, not BCH which needs 15 bits in
+parameter n=12; //default value is set for hamming, not BCH which needs 15 bits in
 input [n-1:0] DataIn;
 input CLK, Flag;
 output reg [n-1:0] DataOut;

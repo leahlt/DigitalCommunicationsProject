@@ -1,84 +1,4 @@
-vsim -gui work.text_top_tb -L altera_mf -L altera_mf_ver
-# vsim -gui work.text_top_tb -L altera_mf -L altera_mf_ver 
-# Start time: 22:47:43 on Jun 14,2021
-# Loading work.text_top_tb
-# Loading work.text_top
-# Loading work.get_text
-# Loading work.ram
-# Loading work.compression
-# Loading work.encrypt
-# Loading work.rc4
-# Loading work.BPSK
-# Loading work.channel
-# Loading work.tx
-# Loading work.awgn
-# Loading work.rx
-# Loading work.decrypt
-# Loading work.decompression
-# Loading work.sink
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.ram_block_type.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(102): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.ram_block_type.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(102): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# Error loading design
-# End time: 22:47:43 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 30, Warnings: 0
+# Load canceled
 # Compile of text_top_tb.v was successful.
 # Compile of awgn.v was successful.
 # Compile of decrypt.v was successful.
@@ -95,88 +15,14 @@ vsim -gui work.text_top_tb -L altera_mf -L altera_mf_ver
 # Compile of compression.v was successful.
 # Compile of decompression.v was successful.
 # 15 compiles, 0 failed with no errors.
-vsim -gui -L altera_mf -L altera_mf_ver work.text_top_tb
-# vsim -gui -L altera_mf -L altera_mf_ver work.text_top_tb 
-# Start time: 22:52:28 on Jun 14,2021
+vsim -gui work.text_top_tb -L altera_mf_ver -L lpm_ver
+# vsim -gui work.text_top_tb -L altera_mf_ver -L lpm_ver 
+# Start time: 23:04:51 on Jun 14,2021
 # Loading work.text_top_tb
 # Loading work.text_top
-# Loading work.get_text
-# Loading work.ram
-# Loading work.compression
-# Loading work.encrypt
-# Loading work.rc4
-# Loading work.BPSK
-# Loading work.channel
-# Loading work.tx
-# Loading work.awgn
-# Loading work.rx
-# Loading work.decrypt
-# Loading work.decompression
-# Loading work.sink
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.read_during_write_mode_port_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Error (suppressible): (vsim-10000) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
-#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# Error loading design
-# End time: 22:52:28 on Jun 14,2021, Elapsed time: 0:00:00
-# Errors: 28, Warnings: 0
-vsim -gui -L altera_mf_ver work.text_top_tb
-# vsim -gui -L altera_mf_ver work.text_top_tb 
-# Start time: 22:53:58 on Jun 14,2021
-# Loading work.text_top_tb
-# Loading work.text_top
+# Loading work.HammingIP_Dec
+# Loading work.HammingIP_Dec_altecc_decoder_soe
+# Loading lpm_ver.lpm_decode
 # Loading work.get_text
 # Loading work.ram
 # Loading altera_mf_ver.altsyncram
@@ -196,21 +42,21 @@ vsim -gui -L altera_mf_ver work.text_top_tb
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(14): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(21): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
 # ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
 # ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
-# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/modulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
 # ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(54): [PCDPC] - Port size (7) does not match connection size (1) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 # ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(54): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
-# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(26): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/demodulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
-# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(21): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(28): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
 # ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
@@ -219,3 +65,492 @@ vsim -gui -L altera_mf_ver work.text_top_tb
 # ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
 #    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
 run
+# Compile of text_top_tb.v failed with 1 errors.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v failed with 1 errors.
+# Compile of text_top.v failed with 5 errors.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 3 failed with 7 errors.
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v failed with 1 errors.
+# Compile of text_top.v failed with 3 errors.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 2 failed with 4 errors.
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v failed with 3 errors.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 1 failed with 3 errors.
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v failed with 1 errors.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v was successful.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui -L altera_mf_ver -L lpm_ver work.text_top_tb
+# End time: 23:17:53 on Jun 14,2021, Elapsed time: 0:13:02
+# Errors: 0, Warnings: 12
+# vsim -gui -L altera_mf_ver -L lpm_ver work.text_top_tb 
+# Start time: 23:17:53 on Jun 14,2021
+# Loading work.text_top_tb
+# Loading work.text_top
+# Loading work.compression
+# Loading work.encrypt
+# Loading work.rc4
+# Loading work.HammingIP_Enc
+# Loading work.HammingIP_Enc_altecc_encoder_96b
+# Loading work.BPSK
+# Loading work.channel
+# Loading work.tx
+# Loading work.awgn
+# Loading work.rx
+# Loading work.HammingIP_Dec
+# Loading work.HammingIP_Dec_altecc_decoder_soe
+# Loading lpm_ver.lpm_decode
+# Loading work.decrypt
+# Loading work.decompression
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(15): [PCDPC] - Port size (7) does not match connection size (12) for port 'OUT'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/compress File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/modulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_real'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/demodulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(24): [PCDPC] - Port size (7) does not match connection size (12) for port 'q'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v(151).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/hamming_decoder File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+add wave -position insertpoint  \
+sim:/text_top_tb/data_out \
+sim:/text_top_tb/data_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Admin  Hostname: DESKTOP-9L556KC  ProcessID: 2768
+#           Attempting to use alternate WLF file "./wlftak9d1w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftak9d1w
+run
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v was successful.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 0 failed with no errors.
+restart -f
+# Loading work.text_top_tb
+# Loading work.text_top
+# Loading work.get_text
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.compression
+# Loading work.encrypt
+# Loading work.rc4
+# Loading work.HammingIP_Enc
+# Loading work.HammingIP_Enc_altecc_encoder_96b
+# Loading work.BPSK
+# Loading work.channel
+# Loading work.tx
+# Loading work.awgn
+# Loading work.rx
+# Loading work.HammingIP_Dec
+# Loading work.HammingIP_Dec_altecc_decoder_soe
+# Loading work.decrypt
+# Loading work.decompression
+# Loading work.sink
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(15): [PCDPC] - Port size (7) does not match connection size (12) for port 'OUT'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/compress File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/modulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_real'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/demodulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(24): [PCDPC] - Port size (7) does not match connection size (12) for port 'q'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v(151).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/hamming_decoder File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
+# Warning in wave window restart: (vish-4014) No objects found matching '/text_top_tb/data_in'. 
+run
+add wave -position insertpoint  \
+sim:/text_top_tb/DUT/data_in
+restart -f
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(15): [PCDPC] - Port size (7) does not match connection size (12) for port 'OUT'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/compress File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/modulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_real'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/demodulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(24): [PCDPC] - Port size (7) does not match connection size (12) for port 'q'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v(151).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/hamming_decoder File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
+run
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v failed with 1 errors.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v was successful.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 0 failed with no errors.
+restart -f
+# Loading work.text_top_tb
+# Loading work.text_top
+# Loading work.compression
+# Loading work.encrypt
+# Loading work.rc4
+# Loading work.HammingIP_Enc
+# Loading work.HammingIP_Enc_altecc_encoder_96b
+# Loading work.BPSK
+# Loading work.channel
+# Loading work.tx
+# Loading work.awgn
+# Loading work.rx
+# Loading work.HammingIP_Dec
+# Loading work.HammingIP_Dec_altecc_decoder_soe
+# Loading work.decrypt
+# Loading work.decompression
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(15): [PCDPC] - Port size (7) does not match connection size (12) for port 'OUT'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/compress File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/modulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_real'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/demodulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(24): [PCDPC] - Port size (7) does not match connection size (12) for port 'q'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v(151).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/hamming_decoder File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+run
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v was successful.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 0 failed with no errors.
+restart -f
+# Loading work.text_top_tb
+# Loading work.text_top
+# Loading work.get_text
+# Loading work.ram
+# Loading work.compression
+# Loading work.encrypt
+# Loading work.rc4
+# Loading work.HammingIP_Enc
+# Loading work.HammingIP_Enc_altecc_encoder_96b
+# Loading work.BPSK
+# Loading work.channel
+# Loading work.tx
+# Loading work.awgn
+# Loading work.rx
+# Loading work.HammingIP_Dec
+# Loading work.HammingIP_Dec_altecc_decoder_soe
+# Loading work.decrypt
+# Loading work.decompression
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(15): [PCDPC] - Port size (7) does not match connection size (12) for port 'OUT'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/compress File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/modulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_real'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/demodulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(24): [PCDPC] - Port size (7) does not match connection size (12) for port 'q'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v(151).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/hamming_decoder File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+run
+# Compile of text_top_tb.v was successful.
+# Compile of awgn.v was successful.
+# Compile of decrypt.v was successful.
+# Compile of encrypt.v was successful.
+# Compile of get_text.v was successful.
+# Compile of HammingIP_Dec.v was successful.
+# Compile of HammingIP_Enc.v was successful.
+# Compile of ram.v was successful.
+# Compile of rc4.v was successful.
+# Compile of sink.v was successful.
+# Compile of test_tx_rx.v was successful.
+# Compile of text_top.v was successful.
+# Compile of BPSK.v was successful.
+# Compile of compression.v was successful.
+# Compile of decompression.v was successful.
+# 15 compiles, 0 failed with no errors.
+restart -f
+# Loading work.text_top_tb
+# Loading work.text_top
+# Loading work.get_text
+# Loading work.ram
+# Loading work.compression
+# Loading work.encrypt
+# Loading work.rc4
+# Loading work.HammingIP_Enc
+# Loading work.HammingIP_Enc_altecc_encoder_96b
+# Loading work.BPSK
+# Loading work.channel
+# Loading work.tx
+# Loading work.awgn
+# Loading work.rx
+# Loading work.HammingIP_Dec
+# Loading work.HammingIP_Dec_altecc_decoder_soe
+# Loading work.decrypt
+# Loading work.decompression
+# Loading work.sink
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/source/mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(15): [PCDPC] - Port size (7) does not match connection size (12) for port 'OUT'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/compress File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(16): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v(20): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/encryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/modulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'X_in_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_real'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (7) for port 'Y_out_imag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v(69): [PCDPC] - Port size (12) does not match connection size (1) for port 'sum_real_n_truncation'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/channel_mod/noise File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(23): [PCDPC] - Port size (1) does not match connection size (32) for port 'Flag'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/demodulator File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(24): [PCDPC] - Port size (7) does not match connection size (12) for port 'q'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v(151).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/hamming_decoder File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (32) for port 'password'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v(25): [PCDPC] - Port size (7) does not match connection size (12) for port 'data_in'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'password_input'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v(29): [PCDPC] - Port size (8) does not match connection size (7) for port 'K'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/decryptor/device File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v
+# ** Warning: (vsim-3015) C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'wren'. The port definition is at: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /text_top_tb/DUT/finish/sink_mem File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
+run
+# ** Note: $stop    : C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v(28)
+#    Time: 100150 ns  Iteration: 0  Instance: /text_top_tb
+# Break in Module text_top_tb at C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v line 28

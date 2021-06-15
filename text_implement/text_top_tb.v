@@ -5,7 +5,8 @@ module text_top_tb();
     reg clk;
     reg reset;
     wire [7:0] data_out;
-
+  //  reg [7:0] data_in;
+ //   text_top DUT(clk,reset, data_in,  data_out);
     text_top DUT(clk,reset,  data_out);
 
     initial begin
@@ -22,6 +23,7 @@ module text_top_tb();
         #5;
         reset = 0;
         #10;
+       // data_in = 5;
         #10000;
         $stop;     
     end
