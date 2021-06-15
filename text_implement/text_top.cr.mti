@@ -5,12 +5,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	get_text
 
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module awgn
+-- Compiling module sink
 
 Top level modules:
-	awgn
+	sink
 
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -20,12 +20,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	HammingIP_Dec
 
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module sink
+-- Compiling module awgn
 
 Top level modules:
-	sink
+	awgn
 
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -42,12 +42,33 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	rc4
 
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module compression
+
+Top level modules:
+	compression
+
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decompression.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decompression.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decompression
+
+Top level modules:
+	decompression
+
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module decrypt
 
 Top level modules:
 	decrypt
+
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module text_top_tb
+
+Top level modules:
+	text_top_tb
 
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -60,13 +81,6 @@ Top level modules:
 	channel
 	top_tb
 
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module text_top_tb
-
-Top level modules:
-	text_top_tb
-
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module encrypt
@@ -74,18 +88,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	encrypt
 
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module text_top
+
+Top level modules:
+	text_top
+
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module BPSK
 
 Top level modules:
 	BPSK
-
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ram
-
-Top level modules:
-	ram
 
 } {} {}}
