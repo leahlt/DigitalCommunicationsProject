@@ -1,50 +1,27 @@
 module Modulator_tb ();
 
-reg [6:0] in;
-reg CLK, Flag;
-wire [6:0] out;
+reg [11:0] in;
 
-BPSK #(7) dut(in, out, CLK, Flag);
+wire [11:0] out;
+
+topTest dut(in, out);
 
 
-initial forever begin
-	   CLK = 0; 
-		#10
-		CLK = 1;
-		#10;
-end 
 
 initial begin
 
 
 $display("Starting BPSK Modulator testbench test...");
 
-in <= 7'b 0000_010; //0 input
-Flag <= 1;
-#7
-Flag <= 0;
-#7
-Flag <= 1;
-#7
-Flag <= 0;
-#7
-Flag <= 1;
-#7
-Flag <= 0;
-#7
-in <= 7'b 1111_111; //1 input
-Flag <= 1;
-#7
-Flag <= 0;
-#7
-Flag <= 1;
-#7
-Flag <= 0;
-#7
-Flag <= 1;
-#7
-Flag <= 0;
-#7;
+in <= 12'b 1111_0000_0011; //0 input
+#10;
+in <= 12'b 0000_0000_0000; //0 input
+#10;
+in <= 12'b 0101_1111_0000; //0 input
+#10;
+in <= 12'b 1111_1111_1111; //0 input
+#10;
+
 
 end
 
