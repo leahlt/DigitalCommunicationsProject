@@ -10,8 +10,7 @@ module text_top(input clk, input reset,/*input [7:0] data_in,*/ output [7:0] dat
     wire [11:0] compressed_out;
     wire [11:0] hamming_enc;
     wire [11:0] hamming_dec;
-
-    get_text source(clk, reset, data_in);
+    get_text source(clk, reset, data_in, init_done);
     compression compress(data_in, compressed_out);
     encrypt encryptor(clk, rst, 123, compressed_out, encrypted_txt, init_done);
 
@@ -24,7 +23,7 @@ module text_top(input clk, input reset,/*input [7:0] data_in,*/ output [7:0] dat
     HammingIP_Dec hamming_decoder(channel_data_out,err_corrected,err_detected,err_fatal,hamming_dec);
     decrypt decryptor(clk, rst, 123, demod_out, decrypted_txt, init_done);
     decompression decompressd(decrypted_txt, data_out);
-    sink finish(clk, reset, data_out);
+    sink finish(clk, reset, data_out, init_done);
 
 
 endmodule

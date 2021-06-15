@@ -1,8 +1,8 @@
   
-module get_text(clk, reset, data_out);
+module get_text(clk, reset, data_out, start_source);
 	input clk, reset;
 	output [7:0] data_out;
-
+	input start_source;
 	//internal signals
 	reg [7:0] address = 0; //initialize address
 
