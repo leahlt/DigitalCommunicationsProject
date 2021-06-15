@@ -2,7 +2,7 @@
 
 module decrypt(clk, rst, password, data_in, data_out, init_done);
 
-   parameter n=8; //Bus width
+   parameter n=7; //Bus width
 
 
 

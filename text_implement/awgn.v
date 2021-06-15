@@ -20,7 +20,7 @@
 
 
 `timescale 1 ns / 100ps
-`define Bi 	8	                 //Input data width
+`define Bi 	7	                 //Input data width
 `define SNR_dB 8                //SNR_dB value
 `define DATA 320000             //Total input data
 

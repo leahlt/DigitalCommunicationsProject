@@ -1,7 +1,7 @@
 
 module encrypt(clk, rst, password, data_in, data_out, init_done);
 
-   parameter n=8;
+   parameter n=7;
    input wire clk, rst;
    input wire [n-1:0] password, data_in;
    output wire [n-1:0] data_out;
