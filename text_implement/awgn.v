@@ -20,7 +20,7 @@
 
 
 `timescale 1 ns / 100ps
-`define Bi 	24	                 //Input data width
+`define Bi 	12	                 //Input data width
 `define SNR_dB 8                //SNR_dB value
 `define DATA 320000             //Total input data
 
@@ -36,6 +36,7 @@ output   busy;
 output   [`Bi-1:0] Y_out_real = 0;  
 output   [`Bi-1:0] Y_out_imag;
 output   [11:0] sum_real_n_truncation;
+
 reg signed     [`Bi-1:0] Y_out_real = 0;
 reg signed     [`Bi-1:0] Y_out_imag = 0;
 reg      busy;
@@ -181,8 +182,6 @@ begin
     else begin
         if(busy==1'b1 && j<=`DATA)
         begin
-        Y_out_real[23:12] <= 12'b0;
-
             
             //**********f(x1)=sqrt(-exp(x1))***********
             

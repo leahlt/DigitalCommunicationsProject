@@ -5,7 +5,7 @@ module sink(clk, reset, data_in, start_sink);
 	//internal signals
 	reg [7:0] address = 0; //initialize address
 	integer counter = 0;
-	parameter end_address = 10;
+	parameter end_address = 255;
 
 	always @ (posedge clk or posedge reset) begin 
 		if (reset) begin 
@@ -13,7 +13,7 @@ module sink(clk, reset, data_in, start_sink);
 			counter = 0;
 		end
 
-		else if (counter >2 && address < end_address) begin
+		else if (counter > 4 && address < end_address) begin
 			address <= address + 1'b1;
 		end
 		else counter = counter + 1;

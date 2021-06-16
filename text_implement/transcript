@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compile of text_top_tb.v was successful.
 # Compile of awgn.v was successful.
 # Compile of decrypt.v was successful.
@@ -167,3 +168,5 @@ run
 # Break in Module text_top_tb at C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v line 28
 # End time: 20:44:16 on Jun 15,2021, Elapsed time: 8:44:09
 # Errors: 0, Warnings: 426
+=======
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
