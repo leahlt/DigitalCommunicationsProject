@@ -10,6 +10,7 @@ cModel Technology
 dC:/School/CPEN391/Final_Project/New folder
 vawgn
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z0 !s110 1623814677
 !i10b 1
 !s100 oL4EE;kWLA8fcfIQ:@PTd0
@@ -17,6 +18,15 @@ IGDEd`08oOO`M>;>CBHj[;2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/School/CPEN391/DigitalCommunicationsProject/text_implement
 w1623814615
+=======
+Z0 !s110 1623774992
+!i10b 1
+!s100 I6GW@JZEWJIzfB1N7F?>E1
+IRz9BV8S1Slcd6]>^1Ocdf0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/School/CPEN391/DigitalCommunicationsProject/text_implement
+w1623737702
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 Z0 !s110 1623774992
 !i10b 1
@@ -34,7 +44,11 @@ r1
 !s85 0
 31
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z4 !s108 1623814677.000000
+=======
+Z4 !s108 1623774992.000000
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 Z4 !s108 1623774992.000000
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -45,7 +59,11 @@ Z5 o-work work
 Z6 tCvgOpt 0
 vBPSK
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z7 !s110 1623814678
+=======
+Z7 !s110 1623774994
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 Z7 !s110 1623774994
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -63,7 +81,11 @@ r1
 !s85 0
 31
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z9 !s108 1623814678.000000
+=======
+Z8 !s108 1623774994.000000
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 Z8 !s108 1623774994.000000
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -73,6 +95,7 @@ Z8 !s108 1623774994.000000
 R5
 R6
 n@b@p@s@k
+<<<<<<< HEAD
 <<<<<<< HEAD
 vBPSK_demod
 Z10 !s110 1623814679
@@ -120,6 +143,8 @@ R6
 n@b@p@s@k_mod
 =======
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
+=======
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 vchannel
 R7
 !i10b 1
@@ -164,7 +189,11 @@ R5
 R6
 vdecompression
 <<<<<<< HEAD
+<<<<<<< HEAD
 R10
+=======
+!s110 1623774995
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 !s110 1623774995
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -182,7 +211,11 @@ r1
 !s85 0
 31
 <<<<<<< HEAD
+<<<<<<< HEAD
 R11
+=======
+!s108 1623774995.000000
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 !s108 1623774995.000000
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -199,7 +232,11 @@ I4;IMh1`E3QFeR:n;XT?7h1
 R1
 R2
 <<<<<<< HEAD
+<<<<<<< HEAD
 w1623813583
+=======
+Z15 w1623734034
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 Z15 w1623734034
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -224,7 +261,11 @@ IZSOfPRdHNc]eNFQLZJ;RG1
 R1
 R2
 <<<<<<< HEAD
+<<<<<<< HEAD
 w1623813691
+=======
+R15
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 R15
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -264,7 +305,11 @@ R5
 R6
 vHammingIP_Dec
 <<<<<<< HEAD
+<<<<<<< HEAD
 R7
+=======
+R14
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 R14
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -290,7 +335,11 @@ R6
 n@hamming@i@p_@dec
 vHammingIP_Dec_altecc_decoder_soe
 <<<<<<< HEAD
+<<<<<<< HEAD
 R7
+=======
+R14
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 R14
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -330,7 +379,11 @@ r1
 !s85 0
 31
 <<<<<<< HEAD
+<<<<<<< HEAD
 R9
+=======
+R16
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 R16
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
@@ -356,7 +409,11 @@ r1
 !s85 0
 31
 <<<<<<< HEAD
+<<<<<<< HEAD
 R9
+=======
+R16
+>>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
 =======
 R16
 >>>>>>> parent of 9fb6e38 (Text donewith new bpsk)
