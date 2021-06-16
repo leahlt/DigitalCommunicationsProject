@@ -1,5 +1,5 @@
 Analysis & Synthesis report for text_top
-Wed Jun 16 09:13:09 2021
+Wed Jun 16 16:12:56 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -75,14 +75,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jun 16 09:13:08 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Jun 16 16:12:56 2021       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; text_top                                    ;
 ; Top-level Entity Name           ; text_top                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 243                                         ;
-; Total pins                      ; 14                                          ;
+; Total registers                 ; 219                                         ;
+; Total pins                      ; 5                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 4,096                                       ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -195,7 +195,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -258,18 +259,18 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 206                      ;
+; Estimate of Logic utilization (ALMs needed) ; 190                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 297                      ;
+; Combinational ALUT usage for logic          ; 270                      ;
 ;     -- 7 input functions                    ; 4                        ;
-;     -- 6 input functions                    ; 59                       ;
-;     -- 5 input functions                    ; 61                       ;
-;     -- 4 input functions                    ; 41                       ;
-;     -- <=3 input functions                  ; 132                      ;
+;     -- 6 input functions                    ; 54                       ;
+;     -- 5 input functions                    ; 65                       ;
+;     -- 4 input functions                    ; 40                       ;
+;     -- <=3 input functions                  ; 107                      ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 243                      ;
+; Dedicated logic registers                   ; 219                      ;
 ;                                             ;                          ;
-; I/O pins                                    ; 14                       ;
+; I/O pins                                    ; 5                        ;
 ; Total MLAB memory bits                      ; 0                        ;
 ; Total block memory bits                     ; 4096                     ;
 ;                                             ;                          ;
@@ -277,8 +278,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 233                      ;
-; Total fan-out                               ; 2459                     ;
-; Average fan-out                             ; 4.15                     ;
+; Total fan-out                               ; 2291                     ;
+; Average fan-out                             ; 4.37                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -287,13 +288,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                  ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |text_top                                                                                                                               ; 297 (2)             ; 243 (1)                   ; 4096              ; 0          ; 14   ; 0            ; |text_top                                                                                                                                                                                                                                                                                                                                            ; text_top                          ; work         ;
+; |text_top                                                                                                                               ; 270 (2)             ; 219 (1)                   ; 4096              ; 0          ; 5    ; 0            ; |text_top                                                                                                                                                                                                                                                                                                                                            ; text_top                          ; work         ;
 ;    |channel:channel_mod|                                                                                                                ; 0 (0)               ; 7 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|channel:channel_mod                                                                                                                                                                                                                                                                                                                        ; channel                           ; work         ;
 ;       |tx:trans|                                                                                                                        ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|channel:channel_mod|tx:trans                                                                                                                                                                                                                                                                                                               ; tx                                ; work         ;
-;    |compression:compress|                                                                                                               ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|compression:compress                                                                                                                                                                                                                                                                                                                       ; compression                       ; work         ;
-;    |decompression:decompressd|                                                                                                          ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|decompression:decompressd                                                                                                                                                                                                                                                                                                                  ; decompression                     ; work         ;
+;    |compression:compress|                                                                                                               ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|compression:compress                                                                                                                                                                                                                                                                                                                       ; compression                       ; work         ;
+;    |decompression:decompressd|                                                                                                          ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|decompression:decompressd                                                                                                                                                                                                                                                                                                                  ; decompression                     ; work         ;
 ;    |decrypt:decryptor|                                                                                                                  ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|decrypt:decryptor                                                                                                                                                                                                                                                                                                                          ; decrypt                           ; work         ;
-;    |encrypt:encryptor|                                                                                                                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|encrypt:encryptor                                                                                                                                                                                                                                                                                                                          ; encrypt                           ; work         ;
+;    |encrypt:encryptor|                                                                                                                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|encrypt:encryptor                                                                                                                                                                                                                                                                                                                          ; encrypt                           ; work         ;
 ;    |get_text:source|                                                                                                                    ; 51 (10)             ; 45 (8)                    ; 2048              ; 0          ; 0    ; 0            ; |text_top|get_text:source                                                                                                                                                                                                                                                                                                                            ; get_text                          ; work         ;
 ;       |s_mem:S|                                                                                                                         ; 41 (0)              ; 37 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |text_top|get_text:source|s_mem:S                                                                                                                                                                                                                                                                                                                    ; s_mem                             ; work         ;
 ;          |altsyncram:altsyncram_component|                                                                                              ; 41 (0)              ; 37 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                    ; altsyncram                        ; work         ;
@@ -301,7 +302,7 @@ https://fpgasoftware.intel.com/eula.
 ;                |altsyncram_4fg2:altsyncram1|                                                                                            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|altsyncram_4fg2:altsyncram1                                                                                                                                                                                                                         ; altsyncram_4fg2                   ; work         ;
 ;                |sld_mod_ram_rom:mgl_prim2|                                                                                              ; 41 (23)             ; 37 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                                           ; sld_mod_ram_rom                   ; work         ;
 ;                   |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                                                  ; 18 (18)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                                                                                                                                        ; sld_rom_sr                        ; work         ;
-;    |sink:finish|                                                                                                                        ; 91 (50)             ; 77 (40)                   ; 2048              ; 0          ; 0    ; 0            ; |text_top|sink:finish                                                                                                                                                                                                                                                                                                                                ; sink                              ; work         ;
+;    |sink:finish|                                                                                                                        ; 62 (21)             ; 53 (16)                   ; 2048              ; 0          ; 0    ; 0            ; |text_top|sink:finish                                                                                                                                                                                                                                                                                                                                ; sink                              ; work         ;
 ;       |f_mem:F|                                                                                                                         ; 41 (0)              ; 37 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |text_top|sink:finish|f_mem:F                                                                                                                                                                                                                                                                                                                        ; f_mem                             ; work         ;
 ;          |altsyncram:altsyncram_component|                                                                                              ; 41 (0)              ; 37 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                        ; altsyncram                        ; work         ;
 ;             |altsyncram_cvp1:auto_generated|                                                                                            ; 41 (0)              ; 37 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated                                                                                                                                                                                                                                                         ; altsyncram_cvp1                   ; work         ;
@@ -456,12 +457,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 243   ;
+; Total registers                              ; 219   ;
 ; Number of registers using Synchronous Clear  ; 7     ;
 ; Number of registers using Synchronous Load   ; 71    ;
-; Number of registers using Asynchronous Clear ; 147   ;
+; Number of registers using Asynchronous Clear ; 123   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 195   ;
+; Number of registers using Clock Enable       ; 169   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -482,19 +483,19 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[3]                                                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                         ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[7]                                                ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[2]                                                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2] ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]     ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]     ;
 ; 26:1               ; 4 bits    ; 68 LEs        ; 40 LEs               ; 28 LEs                 ; Yes        ; |text_top|get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]      ;
 ; 26:1               ; 4 bits    ; 68 LEs        ; 44 LEs               ; 24 LEs                 ; Yes        ; |text_top|sink:finish|f_mem:F|altsyncram:altsyncram_component|altsyncram_cvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]          ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |text_top|c_state                                                                                                                                                                             ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |text_top|decompression:decompressd|OUT[1]                                                                                                                                                    ;
-; 9:1                ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |text_top|compression:compress|OUT[5]                                                                                                                                                         ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |text_top|decompression:decompressd|OUT[2]                                                                                                                                                    ;
+; 9:1                ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |text_top|compression:compress|OUT[0]                                                                                                                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -521,7 +522,7 @@ Encoding Type:  One-Hot
 +----------------+-------+-------------------------------------+
 ; Parameter Name ; Value ; Type                                ;
 +----------------+-------+-------------------------------------+
-; end_address    ; 10    ; Signed Integer                      ;
+; end_address    ; 15    ; Signed Integer                      ;
 +----------------+-------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -679,7 +680,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; end_address    ; 10    ; Signed Integer                  ;
+; end_address    ; 15    ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -781,7 +782,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; wren ; Input  ; Info     ; Stuck at VCC                                                                        ;
 ; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -908,32 +908,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 131                         ;
-;     CLR               ; 10                          ;
+; arriav_ff             ; 107                         ;
+;     CLR               ; 12                          ;
 ;     ENA               ; 18                          ;
-;     ENA CLR           ; 62                          ;
+;     ENA CLR           ; 36                          ;
 ;     ENA CLR SLD       ; 16                          ;
 ;     ENA SLD           ; 16                          ;
 ;     plain             ; 9                           ;
-; arriav_lcell_comb     ; 185                         ;
-;     arith             ; 61                          ;
-;         1 data inputs ; 58                          ;
+; arriav_lcell_comb     ; 158                         ;
+;     arith             ; 37                          ;
+;         1 data inputs ; 34                          ;
 ;         2 data inputs ; 3                           ;
 ;     extend            ; 2                           ;
 ;         7 data inputs ; 2                           ;
-;     normal            ; 122                         ;
+;     normal            ; 119                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 9                           ;
-;         3 data inputs ; 14                          ;
-;         4 data inputs ; 25                          ;
-;         5 data inputs ; 36                          ;
-;         6 data inputs ; 34                          ;
-; boundary_port         ; 68                          ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 24                          ;
+;         5 data inputs ; 40                          ;
+;         6 data inputs ; 29                          ;
+; boundary_port         ; 59                          ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.94                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -952,7 +952,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Jun 16 09:12:28 2021
+    Info: Processing started: Wed Jun 16 16:12:12 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off text_top -c text_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -995,9 +995,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file bpsk_de
     Info (12023): Found entity 1: BPSK_demod_text File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file awgn.v
     Info (12023): Found entity 1: awgn File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at text_top.v(15): created implicit net for "init_done" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 15
-Warning (10236): Verilog HDL Implicit Net warning at text_top.v(17): created implicit net for "rst" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at encrypt.v(20): created implicit net for "valid" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at text_top.v(19): created implicit net for "init_done" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 19
 Warning (10037): Verilog HDL or VHDL warning at awgn.v(328): conditional expression evaluates to a constant File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 328
 Warning (10037): Verilog HDL or VHDL warning at awgn.v(335): conditional expression evaluates to a constant File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 335
 Warning (10037): Verilog HDL or VHDL warning at awgn.v(342): conditional expression evaluates to a constant File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 342
@@ -1009,7 +1007,7 @@ Warning (10037): Verilog HDL or VHDL warning at awgn.v(377): conditional express
 Warning (10037): Verilog HDL or VHDL warning at awgn.v(384): conditional expression evaluates to a constant File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 384
 Warning (10037): Verilog HDL or VHDL warning at awgn.v(391): conditional expression evaluates to a constant File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 391
 Info (12127): Elaborating entity "text_top" for the top level hierarchy
-Info (12128): Elaborating entity "get_text" for hierarchy "get_text:source" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 15
+Info (12128): Elaborating entity "get_text" for hierarchy "get_text:source" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 19
 Warning (10030): Net "data_in" at get_text.v(16) has no driver or initial value, using a default initial value '0' File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v Line: 16
 Info (12128): Elaborating entity "s_mem" for hierarchy "get_text:source|s_mem:S" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v Line: 17
 Info (12128): Elaborating entity "altsyncram" for hierarchy "get_text:source|s_mem:S|altsyncram:altsyncram_component" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/s_mem.v Line: 86
@@ -1050,9 +1048,9 @@ Info (12133): Instantiated megafunction "get_text:source|s_mem:S|altsyncram:alts
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "get_text:source|s_mem:S|altsyncram:altsyncram_component|altsyncram_pvp1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
-Info (12128): Elaborating entity "compression" for hierarchy "compression:compress" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 16
+Info (12128): Elaborating entity "compression" for hierarchy "compression:compress" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 20
 Warning (10230): Verilog HDL assignment warning at compression.v(6): truncated value with size 8 to match size of target (7) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v Line: 6
-Info (12128): Elaborating entity "encrypt" for hierarchy "encrypt:encryptor" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 17
+Info (12128): Elaborating entity "encrypt" for hierarchy "encrypt:encryptor" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 21
 Warning (10036): Verilog HDL or VHDL warning at encrypt.v(8): object "data_out_temp" assigned a value but never read File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v Line: 8
 Warning (10036): Verilog HDL or VHDL warning at encrypt.v(17): object "out_valid" assigned a value but never read File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v Line: 17
 Info (12128): Elaborating entity "rc4" for hierarchy "encrypt:encryptor|rc4:device" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v Line: 20
@@ -3166,9 +3164,9 @@ Info (10041): Inferred latch for "KSState.0011" at rc4.v(47) File: C:/School/CPE
 Info (10041): Inferred latch for "KSState.0010" at rc4.v(47) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v Line: 47
 Info (10041): Inferred latch for "KSState.0001" at rc4.v(47) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v Line: 47
 Info (10041): Inferred latch for "KSState.0000" at rc4.v(47) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v Line: 47
-Info (12128): Elaborating entity "HammingIP_Enc" for hierarchy "HammingIP_Enc:hamming_encoder" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 19
+Info (12128): Elaborating entity "HammingIP_Enc" for hierarchy "HammingIP_Enc:hamming_encoder" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 23
 Info (12128): Elaborating entity "HammingIP_Enc_altecc_encoder_96b" for hierarchy "HammingIP_Enc:hamming_encoder|HammingIP_Enc_altecc_encoder_96b:HammingIP_Enc_altecc_encoder_96b_component" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v Line: 89
-Info (12128): Elaborating entity "BPSK_mod_text" for hierarchy "BPSK_mod_text:modulator" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 20
+Info (12128): Elaborating entity "BPSK_mod_text" for hierarchy "BPSK_mod_text:modulator" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 24
 Warning (10230): Verilog HDL assignment warning at BPSK_mod_text.v(9): truncated value with size 32 to match size of target (2) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v Line: 9
 Warning (10230): Verilog HDL assignment warning at BPSK_mod_text.v(10): truncated value with size 32 to match size of target (2) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v Line: 10
 Warning (10230): Verilog HDL assignment warning at BPSK_mod_text.v(11): truncated value with size 32 to match size of target (2) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v Line: 11
@@ -3181,7 +3179,7 @@ Warning (10230): Verilog HDL assignment warning at BPSK_mod_text.v(17): truncate
 Warning (10230): Verilog HDL assignment warning at BPSK_mod_text.v(18): truncated value with size 32 to match size of target (2) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v Line: 18
 Warning (10230): Verilog HDL assignment warning at BPSK_mod_text.v(19): truncated value with size 32 to match size of target (2) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v Line: 19
 Warning (10230): Verilog HDL assignment warning at BPSK_mod_text.v(20): truncated value with size 32 to match size of target (2) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v Line: 20
-Info (12128): Elaborating entity "channel" for hierarchy "channel:channel_mod" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 22
+Info (12128): Elaborating entity "channel" for hierarchy "channel:channel_mod" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 26
 Info (12128): Elaborating entity "tx" for hierarchy "channel:channel_mod|tx:trans" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v Line: 102
 Info (12128): Elaborating entity "awgn" for hierarchy "channel:channel_mod|awgn:noise" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v Line: 103
 Warning (10036): Verilog HDL or VHDL warning at awgn.v(72): object "temp_X_in_imag" assigned a value but never read File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 72
@@ -3205,7 +3203,7 @@ Warning (10230): Verilog HDL assignment warning at awgn.v(320): truncated value 
 Warning (10230): Verilog HDL assignment warning at awgn.v(386): truncated value with size 32 to match size of target (28) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 386
 Warning (10230): Verilog HDL assignment warning at awgn.v(389): truncated value with size 32 to match size of target (24) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 389
 Info (12128): Elaborating entity "rx" for hierarchy "channel:channel_mod|rx:rec" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v Line: 130
-Info (12128): Elaborating entity "BPSK_demod_text" for hierarchy "BPSK_demod_text:demodulator" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 24
+Info (12128): Elaborating entity "BPSK_demod_text" for hierarchy "BPSK_demod_text:demodulator" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 28
 Warning (10230): Verilog HDL assignment warning at BPSK_demod_text.v(10): truncated value with size 32 to match size of target (1) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v Line: 10
 Warning (10230): Verilog HDL assignment warning at BPSK_demod_text.v(11): truncated value with size 32 to match size of target (1) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v Line: 11
 Warning (10230): Verilog HDL assignment warning at BPSK_demod_text.v(12): truncated value with size 32 to match size of target (1) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v Line: 12
@@ -3218,7 +3216,7 @@ Warning (10230): Verilog HDL assignment warning at BPSK_demod_text.v(18): trunca
 Warning (10230): Verilog HDL assignment warning at BPSK_demod_text.v(19): truncated value with size 32 to match size of target (1) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v Line: 19
 Warning (10230): Verilog HDL assignment warning at BPSK_demod_text.v(20): truncated value with size 32 to match size of target (1) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v Line: 20
 Warning (10230): Verilog HDL assignment warning at BPSK_demod_text.v(21): truncated value with size 32 to match size of target (1) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v Line: 21
-Info (12128): Elaborating entity "HammingIP_Dec" for hierarchy "HammingIP_Dec:hamming_decoder" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 25
+Info (12128): Elaborating entity "HammingIP_Dec" for hierarchy "HammingIP_Dec:hamming_decoder" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 29
 Info (12128): Elaborating entity "HammingIP_Dec_altecc_decoder_soe" for hierarchy "HammingIP_Dec:hamming_decoder|HammingIP_Dec_altecc_decoder_soe:HammingIP_Dec_altecc_decoder_soe_component" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v Line: 173
 Info (12128): Elaborating entity "lpm_decode" for hierarchy "HammingIP_Dec:hamming_decoder|HammingIP_Dec_altecc_decoder_soe:HammingIP_Dec_altecc_decoder_soe_component|lpm_decode:error_bit_decoder" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v Line: 102
 Info (12130): Elaborated megafunction instantiation "HammingIP_Dec:hamming_decoder|HammingIP_Dec_altecc_decoder_soe:HammingIP_Dec_altecc_decoder_soe_component|lpm_decode:error_bit_decoder" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v Line: 102
@@ -3229,13 +3227,15 @@ Info (12133): Instantiated megafunction "HammingIP_Dec:hamming_decoder|HammingIP
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_g5f.tdf
     Info (12023): Found entity 1: decode_g5f File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/db/decode_g5f.tdf Line: 23
 Info (12128): Elaborating entity "decode_g5f" for hierarchy "HammingIP_Dec:hamming_decoder|HammingIP_Dec_altecc_decoder_soe:HammingIP_Dec_altecc_decoder_soe_component|lpm_decode:error_bit_decoder|decode_g5f:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 77
-Info (12128): Elaborating entity "decrypt" for hierarchy "decrypt:decryptor" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 26
+Info (12128): Elaborating entity "decrypt" for hierarchy "decrypt:decryptor" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 30
 Warning (10036): Verilog HDL or VHDL warning at decrypt.v(11): object "data_out_temp" assigned a value but never read File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v Line: 11
 Warning (10036): Verilog HDL or VHDL warning at decrypt.v(16): object "temp_K2" assigned a value but never read File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v Line: 16
 Warning (10036): Verilog HDL or VHDL warning at decrypt.v(26): object "out_valid" assigned a value but never read File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v Line: 26
-Warning (10230): Verilog HDL assignment warning at decrypt.v(51): truncated value with size 32 to match size of target (4) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v Line: 51
-Info (12128): Elaborating entity "decompression" for hierarchy "decompression:decompressd" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 27
-Info (12128): Elaborating entity "sink" for hierarchy "sink:finish" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 28
+Warning (10036): Verilog HDL or VHDL warning at decrypt.v(28): object "start_stream" assigned a value but never read File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v Line: 28
+Warning (10230): Verilog HDL assignment warning at decrypt.v(53): truncated value with size 32 to match size of target (4) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v Line: 53
+Info (12128): Elaborating entity "decompression" for hierarchy "decompression:decompressd" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 31
+Info (12128): Elaborating entity "sink" for hierarchy "sink:finish" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 32
+Warning (10230): Verilog HDL assignment warning at sink.v(20): truncated value with size 32 to match size of target (8) File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v Line: 20
 Info (12128): Elaborating entity "f_mem" for hierarchy "sink:finish|f_mem:F" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v Line: 24
 Info (12128): Elaborating entity "altsyncram" for hierarchy "sink:finish|f_mem:F|altsyncram:altsyncram_component" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/f_mem.v Line: 86
 Info (12130): Elaborated megafunction instantiation "sink:finish|f_mem:F|altsyncram:altsyncram_component" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/f_mem.v Line: 86
@@ -3270,23 +3270,19 @@ Info (12133): Instantiated megafunction "sink:finish|f_mem:F|altsyncram:altsyncr
     Info (12134): Parameter "WIDTH_WORD" = "8"
     Info (12134): Parameter "WIDTHAD" = "8"
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "rst" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 17
+    Warning (12110): Net "compressed_out[11]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[10]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[9]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[8]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[7]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "rst" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 17
-    Warning (12110): Net "compressed_out[11]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[10]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[9]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[8]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[7]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "rst" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 17
-    Warning (12110): Net "compressed_out[11]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[10]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[9]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[8]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
-    Warning (12110): Net "compressed_out[7]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 10
+    Warning (12110): Net "compressed_out[11]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[10]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[9]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[8]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
+    Warning (12110): Net "compressed_out[7]" is missing source, defaulting to GND File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 12
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2021.06.16.09:12:56 Progress: Loading sld397e2936/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2021.06.16.16:12:42 Progress: Loading sld397e2936/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3315,20 +3311,19 @@ Info (17049): 239 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/School/CPEN391/DigitalCommunicationsProject/text_implement/output_files/text_top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 1
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 1
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v Line: 1
-Info (21057): Implemented 413 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 378 logic cells
+Info (21057): Implemented 377 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 351 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 108 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
     Info: Peak virtual memory: 5210 megabytes
-    Info: Processing ended: Wed Jun 16 09:13:09 2021
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:01:01
+    Info: Processing ended: Wed Jun 16 16:12:56 2021
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:01:03
 
 
 +------------------------------------------+

@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/School/CPEN391/Final_Project/New folder
 vawgn
-Z0 !s110 1623858421
+Z0 !s110 1623883569
 !i10b 1
 !s100 =K>oolVJzJj`U9zABTn<C0
 I@[D0^b]@KHfYE6J[Jd14;0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/School/CPEN391/DigitalCommunicationsProject/text_implement
-w1623854659
+w1623883564
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 L0 28
@@ -23,14 +23,14 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1623858421.000000
+Z4 !s108 1623883569.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 vBPSK
-Z7 !s110 1623858422
+Z7 !s110 1623883570
 !i10b 1
 !s100 VD3]QACU72XKB`_6G42M40
 IRGMJU05ekNnn3HQa3PAgH3
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-Z9 !s108 1623858422.000000
+Z9 !s108 1623883570.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v|
 !i113 1
@@ -74,13 +74,13 @@ R5
 R6
 n@b@p@s@k_demod
 vBPSK_demod_text
-R7
+Z12 !s110 1623883571
 !i10b 1
 !s100 INY<MiCDNTP=Jono6_A<?1
 I;975P7Y^]C=YFhbbaaA6C2
 R1
 R2
-Z12 w1623827132
+Z13 w1623827132
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v
 L0 1
@@ -88,7 +88,7 @@ R3
 r1
 !s85 0
 31
-R9
+Z14 !s108 1623883571.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod_text.v|
 !i113 1
@@ -118,13 +118,13 @@ R5
 R6
 n@b@p@s@k_mod
 vBPSK_mod_text
-R7
+R12
 !i10b 1
 !s100 8[kQcNKS=7[7]d;L2n1_30
 ICoLjnN18SQYNBKWTZ]`Gc0
 R1
 R2
-R12
+R13
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v
 L0 1
@@ -132,7 +132,7 @@ R3
 r1
 !s85 0
 31
-R9
+R14
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod_text.v|
 !i113 1
@@ -146,22 +146,22 @@ R7
 IgCUh<lVcS]5EP_lB8?IFL1
 R1
 R2
-Z13 w1623818210
-Z14 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v
-Z15 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v
+Z15 w1623818210
+Z16 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v
+Z17 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v
 L0 93
 R3
 r1
 !s85 0
 31
 R9
-Z16 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v|
-Z17 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v|
+Z18 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v|
 !i113 1
 R5
 R6
 vcompression
-R7
+R12
 !i10b 1
 !s100 AXkUo?liCBL`[>G1WYOco2
 ILI[:b;zi8X2?5oOI6NU3Y1
@@ -175,14 +175,14 @@ R3
 r1
 !s85 0
 31
-R9
+R14
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/compression.v|
 !i113 1
 R5
 R6
 vdecompression
-R7
+R12
 !i10b 1
 !s100 `klomkg3H>7N5a4Xkf`d`1
 I_DFK5FK@7Al4j;>nz=@UW0
@@ -196,7 +196,7 @@ R3
 r1
 !s85 0
 31
-R9
+R14
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decompression.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decompression.v|
 !i113 1
@@ -224,13 +224,13 @@ R4
 R5
 R6
 vencrypt
-R0
+R7
 !i10b 1
 !s100 =6kPi2L4JKP:2[D533=SM2
 IDdEoRSgHQUzTUnB@kaEmF2
 R1
 R2
-R13
+R15
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
 L0 2
@@ -245,7 +245,7 @@ R4
 R5
 R6
 vf_mem
-R7
+R12
 !i10b 1
 !s100 CdakoXi[XDaYRg9<m1H;=3
 IdWec?7?gmg8K>H>`EnI513
@@ -254,25 +254,25 @@ R2
 w1623855476
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/f_mem.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/f_mem.v
-Z18 L0 40
+Z20 L0 40
 R3
 r1
 !s85 0
 31
-R9
+R14
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/f_mem.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/f_mem.v|
 !i113 1
 R5
 R6
 vget_text
-R0
+R7
 !i10b 1
-!s100 kaGlAj?CR_zBcJ3WR0IOh0
-IBl;3KCG?g5W?U9>=hfK5;2
+!s100 68cSF3OEVXc0lbNQi9l2a3
+I=VmTL_R7JVRN^FAi<aH?Y0
 R1
 R2
-w1623856954
+w1623878143
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v
 L0 2
@@ -280,102 +280,102 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v|
 !i113 1
 R5
 R6
 vHammingIP_Dec
-R0
+R7
 !i10b 1
 !s100 Y:QeWjZiMPe?9<m`UIIA03
 I;F>O=J2h`eh>JeFN=IlLf2
 R1
 R2
 R8
-Z19 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
-Z20 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+Z21 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
+Z22 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
 L0 146
 R3
 r1
 !s85 0
 31
-R4
-Z21 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v|
-Z22 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v|
+R9
+Z23 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v|
 !i113 1
 R5
 R6
 n@hamming@i@p_@dec
 vHammingIP_Dec_altecc_decoder_soe
-R0
+R7
 !i10b 1
 !s100 `CMM?b<?5ag2AbjZJf@M93
 IW7=50hY]Xb0cA:kkZi^Kk3
 R1
 R2
 R8
-R19
-R20
-Z23 L0 46
+R21
+R22
+Z25 L0 46
 R3
 r1
 !s85 0
 31
-R4
-R21
-R22
+R9
+R23
+R24
 !i113 1
 R5
 R6
 n@hamming@i@p_@dec_altecc_decoder_soe
 vHammingIP_Enc
-R0
+R7
 !i10b 1
 !s100 bgXY3:AM:hZk2je2DC?E61
 I6D;PN9nZ;lmdoj9fSn]oU2
 R1
 R2
 R8
-Z24 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v
-Z25 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v
+Z26 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v
+Z27 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v
 L0 77
 R3
 r1
 !s85 0
 31
-R4
-Z26 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v|
-Z27 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v|
+R9
+Z28 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v|
+Z29 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v|
 !i113 1
 R5
 R6
 n@hamming@i@p_@enc
 vHammingIP_Enc_altecc_encoder_96b
-R0
+R7
 !i10b 1
 !s100 7LHNnR=56MdK=^?K@KIhl0
 I4Ac@iDYIE951KEgoSIMid1
 R1
 R2
 R8
-R24
+R26
+R27
 R25
-R23
 R3
 r1
 !s85 0
 31
-R4
-R26
-R27
+R9
+R28
+R29
 !i113 1
 R5
 R6
 n@hamming@i@p_@enc_altecc_encoder_96b
 vram
-R0
+R7
 !i10b 1
 !s100 X3G=ib:QkTF2DJR`j7I8P3
 I`jPPlQ:aYc0e^o9H>G7YY3
@@ -384,19 +384,19 @@ R2
 R8
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-R18
+R20
 R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v|
 !i113 1
 R5
 R6
 vrc4
-R0
+R7
 !i10b 1
 !s100 f6?fX?>eAT@J3P]m]Ta660
 I]cnk924i239eCAj5l;1:K0
@@ -410,7 +410,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/rc4.v|
 !i113 1
@@ -423,22 +423,22 @@ R7
 Ik=co36P]TFY52DL_PM20P2
 R1
 R2
-R13
-R14
 R15
+R16
+R17
 L0 58
 R3
 r1
 !s85 0
 31
 R9
-R16
-R17
+R18
+R19
 !i113 1
 R5
 R6
 vs_mem
-R7
+R12
 !i10b 1
 !s100 @aJ>D4Q92DjTaga4PWBO@3
 IBBfX5cYLo_mm_BlB@W]i53
@@ -447,12 +447,12 @@ R2
 w1623855416
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/s_mem.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/s_mem.v
-R18
+R20
 R3
 r1
 !s85 0
 31
-R9
+R14
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/s_mem.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/s_mem.v|
 !i113 1
@@ -461,11 +461,11 @@ R6
 vsink
 R7
 !i10b 1
-!s100 ]Of8BnAk;OSdek^R?=0=a0
-II7GG3kRQ3K4SP>gViQ]HN2
+!s100 BgL?c;A_T>Z1e49]QnecZ0
+I8blXUPEC5<4d3@W=VEZNC1
 R1
 R2
-w1623856924
+w1623878133
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v
 L0 1
@@ -473,7 +473,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v|
 !i113 1
@@ -482,11 +482,11 @@ R6
 vtext_top
 R7
 !i10b 1
-!s100 GKjlz:C<5A@b3eU59BO8G1
-IkKbPJ32TnAg80D]URakdU3
+!s100 zNk_[4F0iX4HgA8_=WzU_3
+IT3@^XBB0g>eS3QZedJ32J1
 R1
 R2
-w1623858178
+w1623876579
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v
 L0 1
@@ -503,11 +503,11 @@ R6
 vtext_top_tb
 R0
 !i10b 1
-!s100 g?U>g43Aa0eRoi]RP2I@[1
-INOz<C3eO?<6l[zemam6432
+!s100 zGLO[9>haY15^nckLZI9J2
+ILLZbJ7kgN?aJ1J0D0dIlL1
 R1
 R2
-w1623858419
+w1623882673
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v
 L0 3
@@ -528,17 +528,17 @@ R7
 IolJH[fN<34PFBgfl:6TIM0
 R1
 R2
-R13
-R14
 R15
+R16
+R17
 L0 135
 R3
 r1
 !s85 0
 31
 R9
-R16
-R17
+R18
+R19
 !i113 1
 R5
 R6
@@ -549,17 +549,17 @@ R7
 I6WdLW^QC[cT^TYGW4O03B2
 R1
 R2
-R13
-R14
 R15
+R16
+R17
 L0 1
 R3
 r1
 !s85 0
 31
 R9
-R16
-R17
+R18
+R19
 !i113 1
 R5
 R6

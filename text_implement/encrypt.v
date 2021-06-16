@@ -1,12 +1,12 @@
 
-module encrypt(clk, rst, password, data_in, data_out, init_done);
+module encrypt(clk, rst, password, data_in, data_out, init_done, valid);
 
    parameter n=7;
    input wire clk, rst;
    input wire [n-1:0] password, data_in;
    output wire [n-1:0] data_out;
    reg [n-1:0] data_out_temp;
-
+   input valid;
    wire 	    output_ready;
    wire [n-1:0] 	    K;
    reg [n-1:0] 	    prev_K;

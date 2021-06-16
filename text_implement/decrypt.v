@@ -1,6 +1,6 @@
 
 
-module decrypt(clk, rst, password, data_in, data_out, init_done);
+module decrypt(clk, rst, password, data_in, data_out, init_done, valid);
 
    parameter n=7; //Bus width
 
@@ -10,7 +10,7 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
    input wire [n-1:0] password, data_in;
    reg [n-1:0] data_out_temp;
    output wire [n-1:0] data_out;
-
+   input valid;
    wire 	    output_ready;
    reg [n-1:0] 	    temp_K = 0;
    reg [n-1:0] 	    temp_K2 = 0;
@@ -24,8 +24,8 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
    reg [2:0] 	    state;
    reg 		    temp_out_valid = 0;
    reg out_valid;
-   reg valid;
    reg [3:0] i = 0;
+   reg start_stream;
 
    
    rc4 device(.clk(clk), .rst(rst), .output_ready(output_ready),.password_input(password),.K(K), .init_done(init_done), .valid(valid));
@@ -48,8 +48,8 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
    always @ (posedge clk) begin
      if(rst) begin
      i <= 0;
-     i <= i + 1;
      end
-     else if(i > 2) valid <= 1;
+     else if(i > 2) start_stream <= 1;
+     else if(valid) i <= i + 1;
    end
 endmodule // decrypt

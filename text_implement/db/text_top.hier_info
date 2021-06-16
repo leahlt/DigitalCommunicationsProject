@@ -1,19 +1,9 @@
 |text_top
 CLOCK_50 => CLOCK_50.IN5
-reset => reset.IN3
-KEY[0] => n_state.000.DATAB
-KEY[0] => n_state.001.DATAB
+KEY[0] => KEY[0].IN2
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
-KEY[3] => ~NO_FANOUT~
-data_out[0] <= data_out[0].DB_MAX_OUTPUT_PORT_TYPE
-data_out[1] <= data_out[1].DB_MAX_OUTPUT_PORT_TYPE
-data_out[2] <= data_out[2].DB_MAX_OUTPUT_PORT_TYPE
-data_out[3] <= data_out[3].DB_MAX_OUTPUT_PORT_TYPE
-data_out[4] <= data_out[4].DB_MAX_OUTPUT_PORT_TYPE
-data_out[5] <= data_out[5].DB_MAX_OUTPUT_PORT_TYPE
-data_out[6] <= data_out[6].DB_MAX_OUTPUT_PORT_TYPE
-data_out[7] <= data_out[7].DB_MAX_OUTPUT_PORT_TYPE
+KEY[3] => reset.IN5
 
 
 |text_top|get_text:source
@@ -793,6 +783,7 @@ data_out[4] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
 data_out[5] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
 data_out[6] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
 init_done <= rc4:device.init_done
+valid => valid.IN1
 
 
 |text_top|encrypt:encryptor|rc4:device
@@ -4218,6 +4209,7 @@ data_out[4] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
 data_out[5] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
 data_out[6] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
 init_done <= rc4:device.init_done
+valid => valid.IN1
 
 
 |text_top|decrypt:decryptor|rc4:device
@@ -4877,30 +4869,6 @@ clk => counter[4].CLK
 clk => counter[5].CLK
 clk => counter[6].CLK
 clk => counter[7].CLK
-clk => counter[8].CLK
-clk => counter[9].CLK
-clk => counter[10].CLK
-clk => counter[11].CLK
-clk => counter[12].CLK
-clk => counter[13].CLK
-clk => counter[14].CLK
-clk => counter[15].CLK
-clk => counter[16].CLK
-clk => counter[17].CLK
-clk => counter[18].CLK
-clk => counter[19].CLK
-clk => counter[20].CLK
-clk => counter[21].CLK
-clk => counter[22].CLK
-clk => counter[23].CLK
-clk => counter[24].CLK
-clk => counter[25].CLK
-clk => counter[26].CLK
-clk => counter[27].CLK
-clk => counter[28].CLK
-clk => counter[29].CLK
-clk => counter[30].CLK
-clk => counter[31].CLK
 reset => address[0].ACLR
 reset => address[1].ACLR
 reset => address[2].ACLR
@@ -4917,30 +4885,6 @@ reset => counter[4].ACLR
 reset => counter[5].ACLR
 reset => counter[6].ACLR
 reset => counter[7].ACLR
-reset => counter[8].ACLR
-reset => counter[9].ACLR
-reset => counter[10].ACLR
-reset => counter[11].ACLR
-reset => counter[12].ACLR
-reset => counter[13].ACLR
-reset => counter[14].ACLR
-reset => counter[15].ACLR
-reset => counter[16].ACLR
-reset => counter[17].ACLR
-reset => counter[18].ACLR
-reset => counter[19].ACLR
-reset => counter[20].ACLR
-reset => counter[21].ACLR
-reset => counter[22].ACLR
-reset => counter[23].ACLR
-reset => counter[24].ACLR
-reset => counter[25].ACLR
-reset => counter[26].ACLR
-reset => counter[27].ACLR
-reset => counter[28].ACLR
-reset => counter[29].ACLR
-reset => counter[30].ACLR
-reset => counter[31].ACLR
 data_in[0] => f_mem:F.data[0]
 data_in[1] => f_mem:F.data[1]
 data_in[2] => f_mem:F.data[2]
@@ -4958,30 +4902,7 @@ start_write => counter.OUTPUTSELECT
 start_write => counter.OUTPUTSELECT
 start_write => counter.OUTPUTSELECT
 start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
-start_write => counter.OUTPUTSELECT
+start_write => f_mem:F.wren
 start_sink => ~NO_FANOUT~
 
 

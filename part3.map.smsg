@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at bpsk.v(7): always construct contains both blocking and non-blocking assignments File: C:/School/CPEN391/DigitalCommunicationsProject/bpsk.v Line: 7
