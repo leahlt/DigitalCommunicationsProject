@@ -899,3 +899,5 @@ run
 # ** Note: $stop    : C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v(28)
 #    Time: 100150 ns  Iteration: 0  Instance: /text_top_tb
 # Break in Module text_top_tb at C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v line 28
+# End time: 22:06:06 on Jun 15,2021, Elapsed time: 0:26:31
+# Errors: 1, Warnings: 183
