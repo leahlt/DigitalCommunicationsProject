@@ -18,9 +18,9 @@ assign out8 = (8<= n) ? ((in[8] == 0) ? 01:11) : 00;
 assign out9 = (9<= n) ? ((in[9] == 0) ? 01:11) : 00;
 assign out10 = (10<= n) ? ((in[10] == 0) ? 01:11) : 00;
 assign out11 = (11<= n) ? ((in[11] == 0) ? 01:11) : 00;
-assign out12 = (12<= n) ? ((in[12] == 0) ? 01:11) : 00;
-assign out13 = (13<= n) ? ((in[13] == 0) ? 01:11) : 00;
-assign out14 = (14<= n) ? ((in[14] == 0) ? 01:11) : 00;
+//assign out12 = (12<= n) ? ((in[12] == 0) ? 01:11) : 00;
+//assign out13 = (13<= n) ? ((in[13] == 0) ? 01:11) : 00;
+//assign out14 = (14<= n) ? ((in[14] == 0) ? 01:11) : 00;
 
 assign max_size = {out14, out13, out12, out11, out10, out9, out8, out7, out6, out5, out4, out3, out2, out1, out0};
 

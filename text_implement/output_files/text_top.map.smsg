@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at sink.v(10): always construct contains both blocking and non-blocking assignments File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v Line: 10
+Warning (10268): Verilog HDL information at decrypt.v(43): always construct contains both blocking and non-blocking assignments File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v Line: 43
+Warning (10268): Verilog HDL information at awgn.v(144): always construct contains both blocking and non-blocking assignments File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 144
+Warning (10268): Verilog HDL information at awgn.v(167): always construct contains both blocking and non-blocking assignments File: C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v Line: 167

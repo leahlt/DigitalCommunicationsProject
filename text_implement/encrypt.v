@@ -15,8 +15,8 @@ module encrypt(clk, rst, password, data_in, data_out, init_done);
    reg [2:0] 	    state;
    reg [n-1:0] 	    temp_K = 0;
    reg out_valid;
-   
-   
+   wire valid;
+   assign valid = 1;
    rc4 device(.clk(clk), .rst(rst), .output_ready(output_ready),.password_input(password),.K(K), .init_done(init_done), .valid(valid));
    always @ (posedge clk) begin
       data_out_temp <= 0;
@@ -29,6 +29,7 @@ module encrypt(clk, rst, password, data_in, data_out, init_done);
 	 
       end
    end
+
    assign data_out = (temp_K ^ data_in);
    
 endmodule // decrypt

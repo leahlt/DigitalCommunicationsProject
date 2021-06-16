@@ -5,7 +5,7 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
    parameter n=7; //Bus width
 
 
-
+   integer count = 0;
    input wire clk, rst;
    input wire [n-1:0] password, data_in;
    reg [n-1:0] data_out_temp;
@@ -18,7 +18,7 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
    reg [n-1:0] 	    prev_K;
    reg [n-1:0] 	    data_in_temp;
    
-   
+   reg valid;
    output wire 	    init_done;
    wire [n-1:0] 	    K;
    reg [2:0] 	    state;
@@ -33,13 +33,16 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
       temp_K <= password;
       
       if(valid) begin	 
-	 data_out_temp <= temp_K ^ data_in;
-	 temp_out_valid <= 1;
-	 out_valid <= temp_out_valid;
+	 data_out_temp <= temp_K ^ data_in;	
+     out_valid <= temp_out_valid;
 	 
 	 
 	 
       end
+   end
+   always @(posedge clk) begin
+     if(rst) count = 0;
+     else if(count > 2) valid <= 1;
    end
    assign data_out =  (temp_K ^ data_in);
 

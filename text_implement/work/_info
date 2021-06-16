@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/School/CPEN391/Final_Project/New folder
 vawgn
-Z0 !s110 1623785300
+Z0 !s110 1623814677
 !i10b 1
-!s100 b0ZjK50dRVGR2[JTi43`R0
-IbDd?d0klcMi?<MdW3PKX50
+!s100 oL4EE;kWLA8fcfIQ:@PTd0
+IGDEd`08oOO`M>;>CBHj[;2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/School/CPEN391/DigitalCommunicationsProject/text_implement
-w1623784164
+w1623814615
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 L0 28
@@ -23,14 +23,14 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1623785300.000000
+Z4 !s108 1623814677.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 vBPSK
-Z7 !s110 1623785301
+Z7 !s110 1623814678
 !i10b 1
 !s100 VD3]QACU72XKB`_6G42M40
 IRGMJU05ekNnn3HQa3PAgH3
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-Z9 !s108 1623785301.000000
+Z9 !s108 1623814678.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v|
 !i113 1
@@ -52,13 +52,13 @@ R5
 R6
 n@b@p@s@k
 vBPSK_demod
-Z10 !s110 1623785302
+Z10 !s110 1623814679
 !i10b 1
-!s100 :2<d26g2F9OEk88H=U8j63
-IP@>oW=3^nW87[LXoKmfjg3
+!s100 PWzA<9[lD`0QH_D==hi`01
+I;AjAoGdi[Si>ObgjVkWeS1
 R1
 R2
-w1623783825
+w1623814254
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v
 L0 1
@@ -66,7 +66,7 @@ R3
 r1
 !s85 0
 31
-Z11 !s108 1623785302.000000
+Z11 !s108 1623814679.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v|
 !i113 1
@@ -76,11 +76,11 @@ n@b@p@s@k_demod
 vBPSK_mod
 R10
 !i10b 1
-!s100 SRY]^SgUh3`d>RE1FDP1Y3
-I[N>6>50AdzffXGSEMJ8RK1
+!s100 _^nSn;RDHl_[XUDO53lRE2
+IbzW^b?@9KYQJZ=G?YW@Ak1
 R1
 R2
-w1623782791
+w1623814263
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod.v
 L0 1
@@ -117,7 +117,7 @@ Z16 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCom
 R5
 R6
 vcompression
-R7
+R10
 !i10b 1
 !s100 AXkUo?liCBL`[>G1WYOco2
 ILI[:b;zi8X2?5oOI6NU3Y1
@@ -138,7 +138,7 @@ R9
 R5
 R6
 vdecompression
-R7
+R10
 !i10b 1
 !s100 `klomkg3H>7N5a4Xkf`d`1
 I_DFK5FK@7Al4j;>nz=@UW0
@@ -152,7 +152,7 @@ R3
 r1
 !s85 0
 31
-R9
+R11
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decompression.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decompression.v|
 !i113 1
@@ -161,11 +161,11 @@ R6
 vdecrypt
 R0
 !i10b 1
-!s100 6g[c5RzT0nV]>4LiSEQh@3
-I[WDGZ3]VB;H2n<?Z]iBI]0
+!s100 i[ng70_]kL_[dlXjO;3Xo0
+I4;IMh1`E3QFeR:n;XT?7h1
 R1
 R2
-w1623783542
+w1623813583
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/decrypt.v
 L0 3
@@ -182,11 +182,11 @@ R6
 vencrypt
 R0
 !i10b 1
-!s100 =6kPi2L4JKP:2[D533=SM2
-IDdEoRSgHQUzTUnB@kaEmF2
+!s100 _R^e>TL9zk>Q?SZ>43e>m2
+IZSOfPRdHNc]eNFQLZJ;RG1
 R1
 R2
-w1623783537
+w1623813691
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
 L0 2
@@ -222,7 +222,7 @@ R4
 R5
 R6
 vHammingIP_Dec
-R0
+R7
 !i10b 1
 !s100 Y:QeWjZiMPe?9<m`UIIA03
 I;F>O=J2h`eh>JeFN=IlLf2
@@ -244,7 +244,7 @@ R5
 R6
 n@hamming@i@p_@dec
 vHammingIP_Dec_altecc_decoder_soe
-R0
+R7
 !i10b 1
 !s100 `CMM?b<?5ag2AbjZJf@M93
 IW7=50hY]Xb0cA:kkZi^Kk3
@@ -280,7 +280,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 Z24 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v|
 Z25 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Enc.v|
 !i113 1
@@ -302,7 +302,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 R24
 R25
 !i113 1

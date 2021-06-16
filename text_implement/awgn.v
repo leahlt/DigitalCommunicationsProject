@@ -11,11 +11,11 @@
 //1+ x^1 + x^5 + x^6 + x^8
 // The g_x2_sin is initialized with g_x2_cos=10'b1000000000
 
-// The noise out n_real = sigma*(f_x1 * g_x2_cos)
-// The noise out n_imag = sigma*(f_x1 * g_x2_sin)
+// The noise out n_real <= sigma*(f_x1 * g_x2_cos)
+// The noise out n_imag <= sigma*(f_x1 * g_x2_sin)
 
-// The Y_out_real = X_in_real + n_real
-// The Y_out_imag = X_in_imag + n_imag
+// The Y_out_real <= X_in_real + n_real
+// The Y_out_imag <= X_in_imag + n_imag
 /**********************************************************************************************/
 
 
@@ -145,8 +145,8 @@ always@ (posedge clk)
 begin
     if(reset==1'b0 && read==1'b1 && i < `DATA)
     begin
-        temp_X_in_real=X_in_real;
-        temp_X_in_imag=X_in_imag;
+        temp_X_in_real<=X_in_real;
+        temp_X_in_imag<=X_in_imag;
         i=i+1;
         busy=1;
     end
@@ -188,77 +188,77 @@ begin
             
             f_x1_step1[6:0] <= f_x1_step1[7:1];
             f_x1_step1[7] <= f_x1_step1_xor_out[0];
-            f_x1_step1_out_temp = f_x1_step1 * step1;
-            f_x1_step1_out = f_x1_step1_out_temp[16:8];
+            f_x1_step1_out_temp <= f_x1_step1 * step1;
+            f_x1_step1_out <= f_x1_step1_out_temp[16:8];
             
             if((j%16) == 0)
             begin
                 f_x1_step2[6:0] <= f_x1_step2[7:1];
                 f_x1_step2[7] <= f_x1_step2_xor_out[0];
-                f_x1_step2_out_temp = f_x1_step2 * step_gap1;
-                f_x1_step2_out = f_x1_step2_out_temp[15:8] + step1;
+                f_x1_step2_out_temp <= f_x1_step2 * step_gap1;
+                f_x1_step2_out <= f_x1_step2_out_temp[15:8] + step1;
             end
             
             if((j%17) == 0)
             begin
                 f_x1_high_step[6:0] <= f_x1_high_step[7:1];
                 f_x1_high_step[7] <= f_x1_high_step_xor_out[0];
-                f_x1_high_step_out_temp = f_x1_high_step * high_step;
-                f_x1_high_step_out = f_x1_high_step_out_temp[15:8];
+                f_x1_high_step_out_temp <= f_x1_high_step * high_step;
+                f_x1_high_step_out <= f_x1_high_step_out_temp[15:8];
             end            
             
             if((j%256) == 0)
             begin
                 f_x1_step3[6:0] <= f_x1_step3[7:1];
                 f_x1_step3[7] <= f_x1_step3_xor_out[0];
-                f_x1_step3_out_temp = f_x1_step3 * step_gap2;
-                f_x1_step3_out = f_x1_step3_out_temp[15:8] + step2;
+                f_x1_step3_out_temp <= f_x1_step3 * step_gap2;
+                f_x1_step3_out <= f_x1_step3_out_temp[15:8] + step2;
             end
             
             if((j%4096) == 0)
             begin
                 f_x1_step4[6:0] <= f_x1_step4[7:1];
                 f_x1_step4[7] <= f_x1_step4_xor_out[0];
-                f_x1_step4_out_temp = f_x1_step4 * step_gap3;
-                f_x1_step4_out = f_x1_step4_out_temp[15:8] + step3;
+                f_x1_step4_out_temp <= f_x1_step4 * step_gap3;
+                f_x1_step4_out <= f_x1_step4_out_temp[15:8] + step3;
             end
             
             if((j%65536) == 0)
             begin
                 f_x1_step5[6:0] <= f_x1_step5[7:1];
                 f_x1_step5[7] <= f_x1_step5_xor_out[0];
-                f_x1_step5_out_temp = f_x1_step5 * step_gap4;
-                f_x1_step5_out = f_x1_step5_out_temp[15:8] + step4;
+                f_x1_step5_out_temp <= f_x1_step5 * step_gap4;
+                f_x1_step5_out <= f_x1_step5_out_temp[15:8] + step4;
             end
             
             if((j%1048576) == 0)
             begin
                 f_x1_step6[6:0] <= f_x1_step6[7:1];
                 f_x1_step6[7] <= f_x1_step6_xor_out[0];
-                f_x1_step6_out_temp = f_x1_step6 * step_gap5;
-                f_x1_step6_out = f_x1_step6_out_temp[15:8] + step5;
+                f_x1_step6_out_temp <= f_x1_step6 * step_gap5;
+                f_x1_step6_out <= f_x1_step6_out_temp[15:8] + step5;
             end
             
             //*************g(x2)=cos(2*pi*x2)****************
             
             g_x2_cos[7:0] <= g_x2_cos[8:1];
             g_x2_cos[8] <= g_xor_out_cos[0];
-            g_x2_cos_out_temp = g_x2_cos * g_x2_step_high ;
-            g_x2_cos_out = g_x2_cos_out_temp[16:8];
+            g_x2_cos_out_temp <= g_x2_cos * g_x2_step_high ;
+            g_x2_cos_out <= g_x2_cos_out_temp[16:8];
  
             if((j%5) == 0)
             begin
                 g_x2_cos_step[7:0] <= g_x2_cos_step[8:1];
                 g_x2_cos_step[8] <= g_x2_cos_step_xor_out[0];
-                g_x2_cos_step_temp = g_x2_cos_step * g_x2_gap;
-                temp_g_x2_cos = g_x2_cos_step_temp[16:8];
+                g_x2_cos_step_temp <= g_x2_cos_step * g_x2_gap;
+                temp_g_x2_cos <= g_x2_cos_step_temp[16:8];
                 if(temp_g_x2_cos > 0)
                 begin
-                    g_x2_cos_out = temp_g_x2_cos + g_x2_step_high;
+                    g_x2_cos_out <= temp_g_x2_cos + g_x2_step_high;
                 end
                 if(temp_g_x2_cos < 0)
                 begin
-                    g_x2_cos_out = temp_g_x2_cos + g_x2_step_low;
+                    g_x2_cos_out <= temp_g_x2_cos + g_x2_step_low;
                 end
             end
             
@@ -266,134 +266,134 @@ begin
             
             if((i%1048576) == 0)
             begin
-// 			       sum_real_n = f_x1_step6_out * sqrt_2 * g_x2_cos_out;
-                g_x2_cos_out_integer = g_x2_cos_out;
- 			       sum_real_n_temp_integer = f_x1_step6_out * sqrt_2 * g_x2_cos_out_integer;
-                sum_real_n_temp = sum_real_n_temp_integer;
- 			       sum_real_n = sum_real_n_temp[27:8];
+// 			       sum_real_n <= f_x1_step6_out * sqrt_2 * g_x2_cos_out;
+                g_x2_cos_out_integer <= g_x2_cos_out;
+ 			       sum_real_n_temp_integer <= f_x1_step6_out * sqrt_2 * g_x2_cos_out_integer;
+                sum_real_n_temp <= sum_real_n_temp_integer;
+ 			       sum_real_n <= sum_real_n_temp[27:8];
 		      end
 		      else if((i%65536) == 0)
             begin
-// 			       sum_real_n = f_x1_step5_out * sqrt_2 * g_x2_cos_out;
-                g_x2_cos_out_integer = g_x2_cos_out;
- 			       sum_real_n_temp_integer = f_x1_step5_out * sqrt_2 * g_x2_cos_out_integer;
- 			       sum_real_n_temp = sum_real_n_temp_integer;
- 			       sum_real_n = sum_real_n_temp[27:8];
+// 			       sum_real_n <= f_x1_step5_out * sqrt_2 * g_x2_cos_out;
+                g_x2_cos_out_integer <= g_x2_cos_out;
+ 			       sum_real_n_temp_integer <= f_x1_step5_out * sqrt_2 * g_x2_cos_out_integer;
+ 			       sum_real_n_temp <= sum_real_n_temp_integer;
+ 			       sum_real_n <= sum_real_n_temp[27:8];
 		      end
 		      else if((i%4096) == 0)
             begin
-// 			       sum_real_n = f_x1_step4_out * sqrt_2 * g_x2_cos_out;
-                g_x2_cos_out_integer = g_x2_cos_out;
- 			       sum_real_n_temp_integer = f_x1_step4_out * sqrt_2 * g_x2_cos_out_integer;
- 			       sum_real_n_temp = sum_real_n_temp_integer;
- 			       sum_real_n = sum_real_n_temp[27:8];
+// 			       sum_real_n <= f_x1_step4_out * sqrt_2 * g_x2_cos_out;
+                g_x2_cos_out_integer <= g_x2_cos_out;
+ 			       sum_real_n_temp_integer <= f_x1_step4_out * sqrt_2 * g_x2_cos_out_integer;
+ 			       sum_real_n_temp <= sum_real_n_temp_integer;
+ 			       sum_real_n <= sum_real_n_temp[27:8];
 		      end
 		      else if((i%256) == 0)
             begin
-// 			       sum_real_n = f_x1_step3_out * sqrt_2 * g_x2_cos_out;
-                g_x2_cos_out_integer = g_x2_cos_out;
- 			       sum_real_n_temp_integer = f_x1_step3_out * sqrt_2 * g_x2_cos_out_integer;
- 			       sum_real_n_temp = sum_real_n_temp_integer;
- 			       sum_real_n = sum_real_n_temp[27:8];
+// 			       sum_real_n <= f_x1_step3_out * sqrt_2 * g_x2_cos_out;
+                g_x2_cos_out_integer <= g_x2_cos_out;
+ 			       sum_real_n_temp_integer <= f_x1_step3_out * sqrt_2 * g_x2_cos_out_integer;
+ 			       sum_real_n_temp <= sum_real_n_temp_integer;
+ 			       sum_real_n <= sum_real_n_temp[27:8];
 		      end
 		      else if((i%16) == 0)
             begin
-// 			       sum_real_n = f_x1_step2_out * sqrt_2 * g_x2_cos_out;
-                g_x2_cos_out_integer = g_x2_cos_out;
- 			       sum_real_n_temp_integer = f_x1_step2_out * sqrt_2 * g_x2_cos_out_integer;
- 			       sum_real_n_temp = sum_real_n_temp_integer;
- 			       sum_real_n = sum_real_n_temp[27:8];
+// 			       sum_real_n <= f_x1_step2_out * sqrt_2 * g_x2_cos_out;
+                g_x2_cos_out_integer <= g_x2_cos_out;
+ 			       sum_real_n_temp_integer <= f_x1_step2_out * sqrt_2 * g_x2_cos_out_integer;
+ 			       sum_real_n_temp <= sum_real_n_temp_integer;
+ 			       sum_real_n <= sum_real_n_temp[27:8];
 		      end
 		      else if((i%17) == 0)
             begin
-// 			       sum_real_n = f_x1_high_step_out * sqrt_2 * g_x2_cos_out;
-                g_x2_cos_out_integer = g_x2_cos_out;
- 			       sum_real_n_temp_integer = f_x1_high_step_out * sqrt_2 * g_x2_cos_out_integer;
-                sum_real_n_temp = sum_real_n_temp_integer;
- 			       sum_real_n = sum_real_n_temp[27:8];
+// 			       sum_real_n <= f_x1_high_step_out * sqrt_2 * g_x2_cos_out;
+                g_x2_cos_out_integer <= g_x2_cos_out;
+ 			       sum_real_n_temp_integer <= f_x1_high_step_out * sqrt_2 * g_x2_cos_out_integer;
+                sum_real_n_temp <= sum_real_n_temp_integer;
+ 			       sum_real_n <= sum_real_n_temp[27:8];
 		      end
 		      else
             begin
-// 			       sum_real_n = f_x1_step1_out * sqrt_2 * g_x2_cos_out;
-                g_x2_cos_out_integer = g_x2_cos_out;
- 			       sum_real_n_temp_integer = f_x1_step1_out * sqrt_2 * g_x2_cos_out_integer;
-                sum_real_n_temp = sum_real_n_temp_integer;
- 			       sum_real_n = sum_real_n_temp[27:8];
+// 			       sum_real_n <= f_x1_step1_out * sqrt_2 * g_x2_cos_out;
+                g_x2_cos_out_integer <= g_x2_cos_out;
+ 			       sum_real_n_temp_integer <= f_x1_step1_out * sqrt_2 * g_x2_cos_out_integer;
+                sum_real_n_temp <= sum_real_n_temp_integer;
+ 			       sum_real_n <= sum_real_n_temp[27:8];
 		      end
 		      
-		      sum_real_n_truncation[11:0] = sum_real_n[19:8];
+		      sum_real_n_truncation[11:0] <= sum_real_n[19:8];
         
             
             //*************** Y=X+(sigma*n) *******************
             if(`SNR_dB==0)
             begin
-                noise_real = sigma_0dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_0dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==1)
             begin
-                noise_real = sigma_1dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_1dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==2)
             begin
-                noise_real = sigma_2dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_2dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==3)
             begin
-                noise_real = sigma_3dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_3dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==4)
             begin
-                noise_real = sigma_4dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_4dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==5)
             begin
-                noise_real = sigma_5dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_5dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==6)
             begin
-                noise_real = sigma_6dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_6dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==7)
             begin
-                noise_real = sigma_7dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_7dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==8)
             begin
-                noise_real = sigma_8dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_8dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             if(`SNR_dB==9)
             begin
-                noise_real = sigma_9dB * sum_real_n;
-                noise_real_truncation[11:0] = noise_real[27:16];
-                temp_noise_real_integer = noise_real_truncation;
-                Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
+                noise_real <= sigma_9dB * sum_real_n;
+                noise_real_truncation[11:0] <= noise_real[27:16];
+                temp_noise_real_integer <= noise_real_truncation;
+                Y_out_real <= (temp_X_in_real + temp_noise_real_integer); 
             end
             j=j+1;
                 
