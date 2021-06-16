@@ -4,10 +4,11 @@ module text_top_tb();
 
     reg clk;
     reg reset;
+    reg[3:0] KEY;
     wire [7:0] data_out;
    reg [7:0] data_in;
     //text_top DUT(clk,reset, data_in,  data_out);
-   text_top DUT(clk,reset,  data_out);
+   text_top DUT(clk,reset, KEY, data_out);
 
     initial begin
         clk = 0;
@@ -18,11 +19,13 @@ module text_top_tb();
     end
 
     initial begin
-        $readmemh ("contents.txt", DUT.source.mem.altsyncram_component.m_default.altsyncram_inst.mem_data);
+        $readmemh ("contents.txt", DUT.source.S.altsyncram_component.m_default.altsyncram_inst.mem_data);
         reset = 1;
+        KEY[3:0] = 4'b1111;
         #5;
         reset = 0;
         #10;
+        KEY[0] = 1'b0;
       // data_in = 63;
         #10000;
         $stop;     

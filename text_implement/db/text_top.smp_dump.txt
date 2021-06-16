@@ -1,0 +1,5 @@
+
+State Machine - |text_top|c_state
+Name c_state.001 
+c_state.000 0 
+c_state.001 1 

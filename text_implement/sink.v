@@ -1,7 +1,8 @@
-module sink(clk, reset, data_in, start_sink);
+module sink(clk, reset, data_in, start_write, start_sink);
 	input clk, reset;
 	input [7:0] data_in;
 	input start_sink;
+	input start_write;
 	//internal signals
 	reg [7:0] address = 0; //initialize address
 	integer counter = 0;
@@ -13,12 +14,12 @@ module sink(clk, reset, data_in, start_sink);
 			counter = 0;
 		end
 
-		else if (counter >2 && address < end_address) begin
+		else if (counter >1 && address < end_address && start_write) begin
 			address <= address + 1'b1;
 		end
-		else counter = counter + 1;
+		else if (start_write) counter = counter + 1;
 
 	end 
 	wire [7:0] data_out;
-	ram sink_mem(.address(address), .clock(clk), .data(data_in), .wren(1),  .q(data_out));
+	f_mem F(.address(address), .clock(clk), .data(data_in), .wren(1),  .q(data_out));
 endmodule 

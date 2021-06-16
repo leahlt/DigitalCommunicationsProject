@@ -181,7 +181,7 @@ begin
     else begin
         if(busy==1'b1 && j<=`DATA)
         begin
-        Y_out_real[23:12] <= 12'b0;
+        Y_out_real[23:12] = 12'b0;
 
             
             //**********f(x1)=sqrt(-exp(x1))***********
