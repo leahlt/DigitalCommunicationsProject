@@ -24,7 +24,9 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
    reg [2:0] 	    state;
    reg 		    temp_out_valid = 0;
    reg out_valid;
-   
+   reg valid;
+   reg [3:0] i = 0;
+
    
    rc4 device(.clk(clk), .rst(rst), .output_ready(output_ready),.password_input(password),.K(K), .init_done(init_done), .valid(valid));
    always @ (posedge clk) begin
@@ -43,5 +45,11 @@ module decrypt(clk, rst, password, data_in, data_out, init_done);
    end
    assign data_out =  (temp_K ^ data_in);
 
-
+   always @ (posedge clk) begin
+     if(rst) begin
+     i <= 0;
+     i <= i + 1;
+     end
+     else if(i > 2) valid <= 1;
+   end
 endmodule // decrypt

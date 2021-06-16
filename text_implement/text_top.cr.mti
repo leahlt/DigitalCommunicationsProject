@@ -12,6 +12,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	awgn
 
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/sink.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sink
+
+Top level modules:
+	sink
+
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/HammingIP_Dec.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module HammingIP_Dec_altecc_decoder_soe
@@ -56,13 +63,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	decompression
 
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module text_top_tb
-
-Top level modules:
-	text_top_tb
-
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/test_tx_rx.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module tx
@@ -73,6 +73,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	channel
 	top_tb
+
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module text_top_tb
+
+Top level modules:
+	text_top_tb
 
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -88,19 +95,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	text_top
 
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod.v
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module BPSK_mod
+-- Compiling module ram
 
 Top level modules:
-	BPSK_mod
-
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module BPSK_demod
-
-Top level modules:
-	BPSK_demod
+	ram
 
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -108,12 +108,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	BPSK
-
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ram
-
-Top level modules:
-	ram
 
 } {} {}}
