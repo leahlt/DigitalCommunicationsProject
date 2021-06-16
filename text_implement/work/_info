@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/School/CPEN391/Final_Project/New folder
 vawgn
-Z0 !s110 1623818982
+Z0 !s110 1623819799
 !i10b 1
-!s100 b0ZjK50dRVGR2[JTi43`R0
-IbDd?d0klcMi?<MdW3PKX50
+!s100 TWN:8?FgCDe9aTAHC:>kb1
+IX:E;Z<`86>^0j5SS[7UK00
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/School/CPEN391/DigitalCommunicationsProject/text_implement
-w1623818767
+w1623819786
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v
 L0 28
@@ -23,14 +23,14 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1623818982.000000
+Z4 !s108 1623819799.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/awgn.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 vBPSK
-Z7 !s110 1623818984
+Z7 !s110 1623819801
 !i10b 1
 !s100 VD3]QACU72XKB`_6G42M40
 IRGMJU05ekNnn3HQa3PAgH3
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-Z9 !s108 1623818983.000000
+Z9 !s108 1623819800.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v|
 !i113 1
@@ -66,7 +66,7 @@ R3
 r1
 !s85 0
 31
-Z10 !s108 1623818984.000000
+Z10 !s108 1623819801.000000
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v|
 !i113 1
@@ -96,7 +96,7 @@ R5
 R6
 n@b@p@s@k_mod
 vchannel
-Z11 !s110 1623818983
+Z11 !s110 1623819800
 !i10b 1
 !s100 JY[mmQZR>]jZ8I6_c_G7o2
 IgCUh<lVcS]5EP_lB8?IFL1
@@ -194,7 +194,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/School/CPEN391/DigitalCommunicationsProject/text_implement/encrypt.v|
 !i113 1
@@ -203,11 +203,11 @@ R6
 vget_text
 R11
 !i10b 1
-!s100 90Bk`DSQAE=ad0`BY4P6L2
-I6gi@Z34NHHd_>B;Hc>5B;2
+!s100 nBJ6FZ_=B1z`6HG]:5VCz3
+IQg0]gfBZV;B4c433l^NW@1
 R1
 R2
-R8
+w1623819532
 8C:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v
 FC:/School/CPEN391/DigitalCommunicationsProject/text_implement/get_text.v
 L0 2

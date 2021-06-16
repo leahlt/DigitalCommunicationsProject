@@ -6,7 +6,7 @@ module get_text(clk, reset, data_out, start_source);
 	//internal signals
 	reg [7:0] address = 0; //initialize address
 
-	parameter end_address = 255;
+	parameter end_address = 10;
 
 	always @ (posedge clk or posedge reset) begin 
 		if (reset) address <= 0;
