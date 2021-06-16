@@ -15,11 +15,11 @@ module text_top(input clk, input reset, output [7:0] data_out);
     encrypt encryptor(clk, rst, 123, compressed_out, encrypted_txt, init_done);
 
     HammingIP_Enc hamming_encoder(encrypted_txt, hamming_enc);
-    BPSK_mod modulator(hamming_enc, mod_out);
+    BPSK_mod_text modulator(hamming_enc, mod_out);
 
     channel channel_mod(clk, reset, mod_out, channel_data_out);
 
-    BPSK_demod demodulator(channel_data_out, demod_out);
+    BPSK_demod_text demodulator(channel_data_out, demod_out);
     HammingIP_Dec hamming_decoder(channel_data_out,err_corrected,err_detected,err_fatal,hamming_dec);
     decrypt decryptor(clk, rst, 123, demod_out, decrypted_txt, init_done);
     decompression decompressd(decrypted_txt, data_out);

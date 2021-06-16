@@ -81,26 +81,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	encrypt
 
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_mod.v
+} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module BPSK_mod
+-- Compiling module BPSK
 
 Top level modules:
-	BPSK_mod
-
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/text_top.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module text_top
-
-Top level modules:
-	text_top
-
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK_demod.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module BPSK_demod
-
-Top level modules:
-	BPSK_demod
+	BPSK
 
 } {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/ram.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -108,12 +94,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	ram
-
-} {} {}} C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v {1 {vlog -work work -stats=none C:/School/CPEN391/DigitalCommunicationsProject/text_implement/BPSK.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module BPSK
-
-Top level modules:
-	BPSK
 
 } {} {}}
