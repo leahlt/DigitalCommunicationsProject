@@ -163,6 +163,9 @@ assign f_x1_high_step_xor_out = f_x1_high_step[0] + f_x1_high_step[1] + f_x1_hig
 assign g_xor_out_cos = g_x2_cos[0] + g_x2_cos[4];
 assign g_x2_cos_step_xor_out = g_x2_cos[0] + g_x2_cos[4];
 
+    reg [2:0] counter = 0;
+    always @ (posedge clk) 
+        counter = counter + 1'b1;
 
 always@ (posedge clk)
 begin
@@ -396,7 +399,8 @@ begin
                 Y_out_real = (temp_X_in_real + temp_noise_real_integer); 
             end
             j=j+1;
-                
+            Y_out_real = temp_X_in_real + j;
+    
         end
     end
 end
