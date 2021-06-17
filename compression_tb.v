@@ -16,15 +16,15 @@ initial begin
 
 
 $display("Starting Compression testbench test...");
-IN <= 8'b01000010; //B input
+IN <= 8'b00110101; //5 input
 #10;
-IN <= 8'b10101110; //A input
+IN <= 8'b00000101; //A input
 #10;
 IN <= 8'b01000100; //D input
 #10;
-IN <= 8'b00100000; //  input
+IN <= 8'b10110011; //  input
 #10;
-IN <= 8'b01000010; // B input
+IN <= 8'b10101001; // B input
 #10;
 IN <= 8'b01101001; // i input
 #10;

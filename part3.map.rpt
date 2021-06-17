@@ -1,0 +1,345 @@
+Analysis & Synthesis report for part3
+Wed Jun 16 13:26:03 2021
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Wed Jun 16 13:26:03 2021           ;
+; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name               ; part3                                       ;
+; Top-level Entity Name       ; part3                                       ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; part3              ; part3              ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Wed Jun 16 13:25:49 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part3 -c part3
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (12125): Using design file part3.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: part3 File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at part3.v(63): created implicit net for "clk" File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 63
+Info (12127): Elaborating entity "part3" for the top level hierarchy
+Warning (12125): Using design file alaw.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Alaw File: C:/School/CPEN391/DigitalCommunicationsProject/alaw.v Line: 1
+Info (12128): Elaborating entity "Alaw" for hierarchy "Alaw:compress_l" File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 42
+Warning (10230): Verilog HDL assignment warning at alaw.v(13): truncated value with size 32 to match size of target (12) File: C:/School/CPEN391/DigitalCommunicationsProject/alaw.v Line: 13
+Warning (10230): Verilog HDL assignment warning at alaw.v(16): truncated value with size 32 to match size of target (3) File: C:/School/CPEN391/DigitalCommunicationsProject/alaw.v Line: 16
+Warning (10230): Verilog HDL assignment warning at alaw.v(24): truncated value with size 32 to match size of target (12) File: C:/School/CPEN391/DigitalCommunicationsProject/alaw.v Line: 24
+Warning (10230): Verilog HDL assignment warning at alaw.v(27): truncated value with size 32 to match size of target (8) File: C:/School/CPEN391/DigitalCommunicationsProject/alaw.v Line: 27
+Warning (10230): Verilog HDL assignment warning at alaw.v(30): truncated value with size 32 to match size of target (5) File: C:/School/CPEN391/DigitalCommunicationsProject/alaw.v Line: 30
+Warning (10230): Verilog HDL assignment warning at alaw.v(69): truncated value with size 32 to match size of target (8) File: C:/School/CPEN391/DigitalCommunicationsProject/alaw.v Line: 69
+Warning (12125): Using design file bpsk.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: BPSK File: C:/School/CPEN391/DigitalCommunicationsProject/bpsk.v Line: 1
+Info (12128): Elaborating entity "BPSK" for hierarchy "BPSK:modulator_l" File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 50
+Warning (12125): Using design file dealaw.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: deAlaw File: C:/School/CPEN391/DigitalCommunicationsProject/dealaw.v Line: 1
+Info (12128): Elaborating entity "deAlaw" for hierarchy "deAlaw:decompress_l" File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 67
+Warning (10230): Verilog HDL assignment warning at dealaw.v(14): truncated value with size 32 to match size of target (8) File: C:/School/CPEN391/DigitalCommunicationsProject/dealaw.v Line: 14
+Warning (10230): Verilog HDL assignment warning at dealaw.v(19): truncated value with size 32 to match size of target (8) File: C:/School/CPEN391/DigitalCommunicationsProject/dealaw.v Line: 19
+Warning (10230): Verilog HDL assignment warning at dealaw.v(20): truncated value with size 32 to match size of target (12) File: C:/School/CPEN391/DigitalCommunicationsProject/dealaw.v Line: 20
+Warning (10230): Verilog HDL assignment warning at dealaw.v(21): truncated value with size 32 to match size of target (12) File: C:/School/CPEN391/DigitalCommunicationsProject/dealaw.v Line: 21
+Warning (10230): Verilog HDL assignment warning at dealaw.v(23): truncated value with size 32 to match size of target (12) File: C:/School/CPEN391/DigitalCommunicationsProject/dealaw.v Line: 23
+Warning (12125): Using design file clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: clock_generator File: C:/School/CPEN391/DigitalCommunicationsProject/clock_generator.v Line: 48
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 96
+Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/School/CPEN391/DigitalCommunicationsProject/clock_generator.v Line: 134
+Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/School/CPEN391/DigitalCommunicationsProject/clock_generator.v Line: 134
+Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: C:/School/CPEN391/DigitalCommunicationsProject/clock_generator.v Line: 134
+    Info (12134): Parameter "clk0_divide_by" = "31"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "14"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "gate_lock_signal" = "NO"
+    Info (12134): Parameter "inclk0_input_frequency" = "37037"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "invalid_lock_multiplier" = "5"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "FAST"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_enable0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_enable1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_sclkout0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_sclkout1" = "PORT_UNUSED"
+    Info (12134): Parameter "valid_lock_multiplier" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altpll_1uu1.tdf
+    Info (12023): Found entity 1: altpll_1uu1 File: C:/School/CPEN391/DigitalCommunicationsProject/db/altpll_1uu1.tdf Line: 26
+Info (12128): Elaborating entity "altpll_1uu1" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Warning (12125): Using design file audio_and_video_config.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: audio_and_video_config File: C:/School/CPEN391/DigitalCommunicationsProject/audio_and_video_config.v Line: 49
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 106
+Warning (12125): Using design file altera_up_slow_clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_slow_clock_generator.v Line: 53
+Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: C:/School/CPEN391/DigitalCommunicationsProject/audio_and_video_config.v Line: 180
+Warning (12125): Using design file altera_up_i2c_av_auto_initialize.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_I2C_AV_Auto_Initialize File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_i2c_av_auto_initialize.v Line: 48
+Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize" File: C:/School/CPEN391/DigitalCommunicationsProject/audio_and_video_config.v Line: 205
+Warning (12125): Using design file altera_up_i2c.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_I2C File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_i2c.v Line: 48
+Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: C:/School/CPEN391/DigitalCommunicationsProject/audio_and_video_config.v Line: 252
+Warning (12125): Using design file audio_codec.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: audio_codec File: C:/School/CPEN391/DigitalCommunicationsProject/audio_codec.v Line: 49
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 127
+Warning (12125): Using design file altera_up_clock_edge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_clock_edge.v Line: 48
+Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/School/CPEN391/DigitalCommunicationsProject/audio_codec.v Line: 181
+Warning (12125): Using design file altera_up_audio_in_deserializer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_audio_in_deserializer.v Line: 47
+Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/School/CPEN391/DigitalCommunicationsProject/audio_codec.v Line: 238
+Warning (12125): Using design file altera_up_audio_bit_counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_audio_bit_counter.v Line: 49
+Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_audio_in_deserializer.v Line: 197
+Warning (12125): Using design file altera_up_sync_fifo.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_sync_fifo.v Line: 47
+Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_audio_in_deserializer.v Line: 219
+Info (12128): Elaborating entity "scfifo" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_sync_fifo.v Line: 153
+Info (12130): Elaborated megafunction instantiation "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_sync_fifo.v Line: 153
+Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_sync_fifo.v Line: 153
+    Info (12134): Parameter "add_ram_output_register" = "OFF"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_numwords" = "128"
+    Info (12134): Parameter "lpm_showahead" = "ON"
+    Info (12134): Parameter "lpm_type" = "scfifo"
+    Info (12134): Parameter "lpm_width" = "24"
+    Info (12134): Parameter "lpm_widthu" = "7"
+    Info (12134): Parameter "overflow_checking" = "OFF"
+    Info (12134): Parameter "underflow_checking" = "OFF"
+    Info (12134): Parameter "use_eab" = "ON"
+Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_8ba1.tdf
+    Info (12023): Found entity 1: scfifo_8ba1 File: C:/School/CPEN391/DigitalCommunicationsProject/db/scfifo_8ba1.tdf Line: 25
+Info (12128): Elaborating entity "scfifo_8ba1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_r2a1.tdf
+    Info (12023): Found entity 1: a_dpfifo_r2a1 File: C:/School/CPEN391/DigitalCommunicationsProject/db/a_dpfifo_r2a1.tdf Line: 33
+Info (12128): Elaborating entity "a_dpfifo_r2a1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo" File: C:/School/CPEN391/DigitalCommunicationsProject/db/scfifo_8ba1.tdf Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_p3i1.tdf
+    Info (12023): Found entity 1: altsyncram_p3i1 File: C:/School/CPEN391/DigitalCommunicationsProject/db/altsyncram_p3i1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_p3i1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram" File: C:/School/CPEN391/DigitalCommunicationsProject/db/a_dpfifo_r2a1.tdf Line: 46
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_6l8.tdf
+    Info (12023): Found entity 1: cmpr_6l8 File: C:/School/CPEN391/DigitalCommunicationsProject/db/cmpr_6l8.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer" File: C:/School/CPEN391/DigitalCommunicationsProject/db/a_dpfifo_r2a1.tdf Line: 55
+Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison" File: C:/School/CPEN391/DigitalCommunicationsProject/db/a_dpfifo_r2a1.tdf Line: 56
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_h2b.tdf
+    Info (12023): Found entity 1: cntr_h2b File: C:/School/CPEN391/DigitalCommunicationsProject/db/cntr_h2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_h2b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb" File: C:/School/CPEN391/DigitalCommunicationsProject/db/a_dpfifo_r2a1.tdf Line: 57
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_u27.tdf
+    Info (12023): Found entity 1: cntr_u27 File: C:/School/CPEN391/DigitalCommunicationsProject/db/cntr_u27.tdf Line: 26
+Info (12128): Elaborating entity "cntr_u27" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter" File: C:/School/CPEN391/DigitalCommunicationsProject/db/a_dpfifo_r2a1.tdf Line: 58
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i2b.tdf
+    Info (12023): Found entity 1: cntr_i2b File: C:/School/CPEN391/DigitalCommunicationsProject/db/cntr_i2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_i2b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr" File: C:/School/CPEN391/DigitalCommunicationsProject/db/a_dpfifo_r2a1.tdf Line: 59
+Warning (12125): Using design file altera_up_audio_out_serializer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/School/CPEN391/DigitalCommunicationsProject/altera_up_audio_out_serializer.v Line: 47
+Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/School/CPEN391/DigitalCommunicationsProject/audio_codec.v Line: 267
+Error (12006): Node instance "rc4_en_l" instantiates undefined entity "encrypt". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 38
+Error (12006): Node instance "rc4_en_r" instantiates undefined entity "encrypt". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 39
+Error (12006): Node instance "error_enc_l" instantiates undefined entity "BCH_enc_ctrl". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 46
+Error (12006): Node instance "error_enc_r" instantiates undefined entity "BCH_enc_ctrl". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 47
+Error (12006): Node instance "circuit" instantiates undefined entity "mycircuit". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 56
+Error (12006): Node instance "error_dec_l" instantiates undefined entity "BCH_dec_ctrl". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 63
+Error (12006): Node instance "error_dec_r" instantiates undefined entity "BCH_dec_ctrl". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 64
+Error (12006): Node instance "rc4_de_l" instantiates undefined entity "decrypt". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 71
+Error (12006): Node instance "rc4_de_r" instantiates undefined entity "decrypt". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/School/CPEN391/DigitalCommunicationsProject/part3.v Line: 72
+Info (144001): Generated suppressed messages file C:/School/CPEN391/DigitalCommunicationsProject/part3.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 9 errors, 28 warnings
+    Error: Peak virtual memory: 4786 megabytes
+    Error: Processing ended: Wed Jun 16 13:26:03 2021
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:25
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/School/CPEN391/DigitalCommunicationsProject/part3.map.smsg.
+
+
